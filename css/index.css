@@ -1,0 +1,39 @@
+@import url('https://fonts.cdnfonts.com/css/kavoon');
+@import url('https://fonts.cdnfonts.com/css/irish-grover');  
+
+& body{
+    background-image: url('../imgs/index/fundo-main-index.png');
+    background-repeat: no-repeat;
+    background-size: 105vw 130vh;
+    
+    header{
+        & ul{
+            & li{
+                & a{
+                    color: #004967;
+                }
+            }
+        }
+    }
+
+    & main{
+        display: grid;
+        grid-template: 90vh 40vw 40vw 40vw 40vw/ auto;
+        & h1{
+            font-size: 85px;
+            font-family: 'Irish Grover', sans-serif;
+            color: #007E7F;
+            text-decoration: underline;
+            text-align: center;
+        }
+
+        & #informacoes{
+            
+        }
+
+    }
+
+    & footer{
+
+    }
+}

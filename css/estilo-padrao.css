@@ -9,11 +9,10 @@
 header{
     background-image: url("../imgs/padroes/cabecalho.png");
     background-repeat: no-repeat;
-    background-color: brown;
     height: 26vh;
     display: grid;
     flex-wrap: wrap;
-    grid-template: auto/ 40vw 1fr;
+    grid-template: auto/ 35vw 1fr;
 
     & figure{
         display: grid;
