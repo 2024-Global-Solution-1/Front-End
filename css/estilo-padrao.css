@@ -1,48 +1,85 @@
-/*O Luiz é Gay*/
+@import url('https://fonts.cdnfonts.com/css/kavoon');  
+
 *{
     margin: 0;
+    padding: 0;      
 }
 
-html {
-    background-color: red;
 
-    & header{
+header{
+    background-image: url("../imgs/padroes/cabecalho.png");
+    background-repeat: no-repeat;
+    background-color: brown;
+    height: 26vh;
+    display: grid;
+    flex-wrap: wrap;
+    grid-template: auto/ 40vw 1fr;
+
+    & figure{
+        display: grid;
+        margin-left: 3vw;
+        
+    }
+
+    & nav{
+        display: grid;
+        margin-top: 7vh;
+        & ul{
+            display: flex;
+            list-style-type: none;
+            gap: 6vw;
+            & li{
+                & a{
+                    font-size: 20px;
+                    font-family: 'Kavoon', sans-serif;
+                    text-decoration: none;
+                }
+            }
+        }  
+    }
+}
+
+footer{
+    margin: 35px 35px 0px 35px;
+    height: 190px;
+    display: grid;
+    grid-template: auto auto auto / 1fr 3fr 1fr;
+
+    & .redes{
+        margin-top: 1.5vw;
         display: flex;
-        background-image: url("../imgs/padroes/cabecalho.png");
-        justify-content: space-between;
-        & nav{
-            align-self: center;
-            & ul{
-                display: flex;
-                
+        justify-content: space-around;
+    }
+    & .direita{
+        grid-column: 3;
+        display: flex;
+        justify-content: end;
+        & ul{
+            & li{
+                text-align: right;
+                padding: 1vh;
+                text-decoration: underline;
+                list-style-type: none;
             }
         }
     }
-    & footer{
-        margin: 35px;
+    & .linha{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        height: 0;
+    }
+    & p{
+        grid-row: 3;
+        grid-column: 2;
+        display: flex;
+        justify-content: center;
+    }
+    & .logo-roda{
         display: grid;
-        grid-template: auto auto auto / 1fr 3fr 1fr;
-        & #redes{
-            display: flex;
-            justify-content: space-around;
-        }
-        & #direita{
-            grid-column: 3;
-            display: flex;
-            justify-content: end;
-        }
-        & hr{
-            grid-column-start: 1;
-            grid-column-end: 4;
-        }
-        & p{
-            grid-row: 3;
-            grid-column: 2;
-            display: flex;
-            justify-content: center;
-        }
-        & #logo-roda{
-            display: flex;
+        padding: 10px;
+        grid-template: auto/ 4vw 1fr;
+        & figcaption{
+            margin-top: 6px;
         }
     }
 }
