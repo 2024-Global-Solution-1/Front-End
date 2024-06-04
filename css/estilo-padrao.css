@@ -39,7 +39,6 @@ header{
 }
 
 footer{
-    margin: 35px 35px 0px 35px;
     height: 190px;
     display: grid;
     grid-template: auto auto auto / 1fr 3fr 1fr;
