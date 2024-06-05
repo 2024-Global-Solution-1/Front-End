@@ -383,3 +383,109 @@ body{
         }
     }
 }
+
+/* ---------------------------------------------------------------------------------------------------------------- */
+
+@media screen and (max-width:1024px) and (min-width:769px){
+    body{
+    
+        & main{
+            height: 400vh;
+            grid-template: 30vh 2vh 40vh 140vh 130vh 50vh / auto;
+            & h2{
+                font-size: 50px;
+                text-align: center;
+            }
+    
+            & h6{
+                font-size: 40px;
+            }
+    
+            & h3{
+                font-size: 30px;
+            }
+    
+            & h4{
+                font-size: 30px;
+            }
+    
+            & h5{
+                font-size: 30px;
+            }
+    
+            & p{
+                font-size: 30px;
+            }
+    
+            & .banner{
+                text-align: center;
+                & img{
+                    height: 20vw;
+                }
+            }
+    
+            & #Tamar{
+                grid-template: 40vh / auto;
+               
+                & .logo{
+                    top: 120vh;
+                    left: 5vw;
+                }
+                
+                & h3{
+                    top: 134vh;
+                    left: 35vw;
+                }
+    
+                & #nome-tamar{
+                    top: 140vh;
+                    left: 30vw;
+                }
+    
+                & .app{
+                    top: 140vh;
+                    left: 50vw;
+
+                    & img{
+                        height: 5vh;
+                    }
+                }
+    
+                & .Desde{
+                    top: 140vh;
+                    left: 74vw;
+                }
+    
+                & .conteudo{
+                    margin-left: 5vw;
+                }
+            }
+    
+            & #Coral-vivo{
+                grid-template: 45vh / auto;
+               
+                & .logo{
+                    top: 263vh;
+                    left: 5vw;
+                }
+                
+                & h3{
+                    top: 275vh;
+                }
+    
+                & .app{
+                    top: 283vh;
+                    left: 40vw;
+                    & img{
+                        height: 5vh;
+                    }
+                }
+    
+                & .Desde{
+                    top: 283vh;
+                    left: 70vw;
+                }
+            }
+        }
+    }
+}
