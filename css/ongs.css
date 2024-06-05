@@ -5,16 +5,19 @@
 body{
     background: linear-gradient(0deg, rgba(0,0,62,0.95) 0%, rgba(0,102,145,0.95) 100%);
     background-repeat: no-repeat;
-    background-size: auto 234.4vh;
+
 
     & header{
-
+        & a{
+            color: #004967;
+        }
     }
 
     & main{
         display: grid;
-        grid-template: 30vh 5vh 10vh 50vh 50vh 5vh/ auto;
-        height: 200vh;
+        grid-template: 30vh 2vh 10vh 130vh 120vh 40vh / auto;
+        height: 350vh;
+        gap: 10px;
 
         & h2{
             font-family: 'Irish Grover', sans-serif;
@@ -26,7 +29,7 @@ body{
 
         & hr{
             justify-self: center;
-            width: 636px;
+            width: 70vw;
             height: 0;
         }
 
@@ -38,12 +41,345 @@ body{
             text-align: center;
         }
 
+        & h3{
+            font-family: 'Irish Grover', sans-serif;
+            color: #fff;
+            font-size: 54px;
+            text-decoration: underline;
+        }
+
+        & h4{
+            font-family: 'Chewy', sans-serif;
+            font-size: 50px;
+            color: #fff;
+        }
+
+        & h5{
+            font-family: 'Chewy', sans-serif;
+            font-size: 40px;
+        }
+
+        & p{
+            font-family: 'Chewy', sans-serif;
+            color: #fff;
+            font-size: 30px;
+        }
+
+        & .banner{
+            text-align: center;
+        }
+
+        & .logo{
+            background-color: rgba(10, 7, 7, 0.92);
+            border-radius: 20px;
+            width: 20vw;
+            height: 20vw;            
+
+        }
+
         & #Tamar{
             justify-self: center;
+            display: grid;
+            grid-template: 40vh / auto;
+           
+            & .logo{
+                display: flex;
+                position: absolute;
+                top: 85vh;
+                left: 10vw;
+            }
+            
+            & h3{
+                position: absolute;
+                top: 96vh;
+                left: 35vw;
+            }
+
+            & #nome-tamar{
+                display: flex;
+                position: absolute;
+                top: 105vh;
+                left: 35vw;
+            }
+
+            & .app{
+                display: flex;
+                position: absolute;
+                top: 106vh;
+                left: 50vw;
+            }
+
+            & .Desde{
+                display: flex;
+                position: absolute;
+                top: 105vh;
+                left: 70vw;
+            }
+
+            & .conteudo{
+                margin-top: 10vh;
+                margin-left: 10vw;
+            }
+        }
+
+        & #Coral-vivo{
+            display: grid;
+            grid-template: 40vh / auto;
+           
+            & .logo{
+                display: flex;
+                position: absolute;
+                top: 215vh;
+                left: 10vw;
+            }
+            
+            & h3{
+                position: absolute;
+                top: 227vh;
+                left: 35vw;
+            }
+
+            & .app{
+                display: flex;
+                position: absolute;
+                top: 237vh;
+                left: 50vw;
+            }
+
+            & .Desde{
+                display: flex;
+                position: absolute;
+                top: 236vh;
+                left: 70vw;
+            }
+
+            & .conteudo{
+                margin-top: 10vh;
+                margin-left: 10vw;
+            }
+        }
+
+        & .adicionar-ong{
+            text-align: center;
+            align-self: flex-end;
+            color: #00DB30;
+            text-decoration: underline;
         }
     }
+}
 
-    & footer{
-        background: linear-gradient(0deg, rgba(10,3,26,1) 0%, rgba(0,0,62,1) 100%);
+/* ---------------------------------------------------------------------------------------------------------------- */
+
+@media screen and (max-width:480px) {
+    body{
+    
+        & main{
+            grid-template: 30vh 2vh 40vh 110vh 120vh 40vh / auto;
+            & h2{
+                font-size: 40px;
+                text-align: center;
+            }
+    
+            & h6{
+                font-size: 30px;
+            }
+    
+            & h3{
+                font-size: 20px;
+            }
+    
+            & h4{
+                font-size: 20px;
+            }
+    
+            & h5{
+                font-size: 20px;
+            }
+    
+            & p{
+                font-size: 20px;
+            }
+    
+            & .banner{
+                text-align: center;
+                & img{
+                    height: 20vw;
+                }
+            }
+    
+            & #Tamar{
+                grid-template: 20vh / auto;
+               
+                & .logo{
+                    top: 113vh;
+                    left: 5vw;
+                }
+                
+                & h3{
+                    top: 118vh;
+                    left: 35vw;
+                }
+    
+                & #nome-tamar{
+                    top: 122vh;
+                    left: 30vw;
+                }
+    
+                & .app{
+                    top: 122.5vh;
+                    left: 50vw;
+
+                    & img{
+                        height: 3vh;
+                    }
+                }
+    
+                & .Desde{
+                    top: 122vh;
+                    left: 74vw;
+                }
+    
+                & .conteudo{
+                    margin-left: 5vw;
+                }
+            }
+    
+            & #Coral-vivo{
+                grid-template: 10vh / auto;
+               
+                & .logo{
+                    top: 223vh;
+                    left: 5vw;
+                }
+                
+                & h3{
+                    top: 229vh;
+                    left: 35vw;
+                }
+    
+                & .app{
+                    top: 234vh;
+                    left: 40vw;
+                    & img{
+                        height: 3vh;
+                    }
+                }
+    
+                & .Desde{
+                    top: 234vh;
+                    left: 70vw;
+                }
+    
+                & .conteudo{
+                    margin-top: 10vh;
+                    margin-left: 10vw;
+                }
+            }
+        }
+    }
+}
+
+/* ---------------------------------------------------------------------------------------------------------------- */
+
+@media screen and (max-width:768px) and (min-width:481px){
+    body{
+    
+        & main{
+            grid-template: 30vh 2vh 40vh 140vh 120vh 10vh / auto;
+            & h2{
+                font-size: 50px;
+                text-align: center;
+            }
+    
+            & h6{
+                font-size: 40px;
+            }
+    
+            & h3{
+                font-size: 30px;
+            }
+    
+            & h4{
+                font-size: 30px;
+            }
+    
+            & h5{
+                font-size: 30px;
+            }
+    
+            & p{
+                font-size: 30px;
+            }
+    
+            & .banner{
+                text-align: center;
+                & img{
+                    height: 20vw;
+                }
+            }
+    
+            & #Tamar{
+                grid-template: 30vh / auto;
+               
+                & .logo{
+                    top: 117vh;
+                    left: 5vw;
+                }
+                
+                & h3{
+                    top: 125vh;
+                    left: 35vw;
+                }
+    
+                & #nome-tamar{
+                    top: 131vh;
+                    left: 30vw;
+                }
+    
+                & .app{
+                    top: 131vh;
+                    left: 50vw;
+
+                    & img{
+                        height: 5vh;
+                    }
+                }
+    
+                & .Desde{
+                    top: 131vh;
+                    left: 74vw;
+                }
+    
+                & .conteudo{
+                    margin-left: 5vw;
+                }
+            }
+    
+            & #Coral-vivo{
+                grid-template: 30vh / auto;
+               
+                & .logo{
+                    top: 255vh;
+                    left: 5vw;
+                }
+                
+                & h3{
+                    top: 267vh;
+                }
+    
+                & .app{
+                    top: 275vh;
+                    left: 40vw;
+                    & img{
+                        height: 5vh;
+                    }
+                }
+    
+                & .Desde{
+                    top: 275vh;
+                    left: 70vw;
+                }
+            }
+        }
     }
 }
