@@ -47,6 +47,7 @@ footer{
     display: grid;
     grid-template: auto auto auto / 1fr 3fr 1fr;
     color: #a7a7a7;
+    border-top: 1px solid white;
 
     & .redes{
         margin-top: 1.5vw;
