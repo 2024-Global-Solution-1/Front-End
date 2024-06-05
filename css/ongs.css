@@ -1,0 +1,49 @@
+@import url('https://fonts.cdnfonts.com/css/kavoon');
+@import url('https://fonts.cdnfonts.com/css/irish-grover');
+@import url('https://fonts.cdnfonts.com/css/chewy');
+
+body{
+    background: linear-gradient(0deg, rgba(0,0,62,0.95) 0%, rgba(0,102,145,0.95) 100%);
+    background-repeat: no-repeat;
+    background-size: auto 234.4vh;
+
+    & header{
+
+    }
+
+    & main{
+        display: grid;
+        grid-template: 30vh 5vh 10vh 50vh 50vh 5vh/ auto;
+        height: 200vh;
+
+        & h2{
+            font-family: 'Irish Grover', sans-serif;
+            font-size: 50px;
+            color: #fff;
+            margin-top: 100px;
+            text-align: center;
+        }
+
+        & hr{
+            justify-self: center;
+            width: 636px;
+            height: 0;
+        }
+
+        & h6{
+            justify-self: center;
+            width: 50vw;
+            font-size: 30px;
+            color: #fff;
+            text-align: center;
+        }
+
+        & #Tamar{
+            justify-self: center;
+        }
+    }
+
+    & footer{
+        background: linear-gradient(0deg, rgba(10,3,26,1) 0%, rgba(0,0,62,1) 100%);
+    }
+}
