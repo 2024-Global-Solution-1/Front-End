@@ -1,5 +1,6 @@
 @import url('https://fonts.cdnfonts.com/css/kavoon');
 @import url('https://fonts.cdnfonts.com/css/irish-grover');
+@import url('https://fonts.cdnfonts.com/css/chewy');
 
 body{
     background: linear-gradient(0deg, rgba(0,96,140,0.95) 0%, rgba(9,149,168,0.95) 100%);
@@ -15,23 +16,73 @@ body{
     & main{
         margin: 10vh;
         color: #ffff;
+        padding: 20px;
 
         & #txt{
-            font-family: 'irish-grover', sans-serif;
-
             & h3{
+                font-family: 'Irish Grover', sans-serif;
                 font-size: 50px;
 
             }
             & p{
+                font-family: 'Chewy', sans-serif;
                 padding: 30px;
                 font-size: 32px;
             }
         }
         
         & #equipe{
-            display: grid;
-            justify-content: center;
+            & h3{
+                font-family: 'Irish Grover', sans-serif;
+                font-size: 50px;
+                text-align: center;
+                padding: 100px;
+            }
+
+            & #fotos{
+                display: grid;
+                grid-template: auto / 20vw 20vw 20vw;
+                Justify-content:space-between;
+                padding: 50px;
+                border-radius: 85px;
+                width: 80vw;
+                background-color: rgba(10, 3, 26, 0.69);
+                font-size: 15px;
+                text-align: center;
+                
+
+                & #Erick{
+                    border: 10px;
+                    border: 2px solid rgb(255, 255, 255);
+                    justify-self: center;
+                    padding: 20px;
+                    border-radius: 10px;
+                    
+                }
+
+                & #Luiz{
+                    border: 2px solid rgb(255, 255, 255);
+                    justify-self: center;
+                    padding: 20px;
+                    border-radius: 10px;
+
+                }
+
+                & #Vicenzo{
+                    border: 2px solid rgb(255, 255, 255);
+                    justify-self: center;
+                    padding: 20px;
+                    border-radius: 10px;
+
+                }
+
+                & figcaption{
+                    width: 20vw;
+                    border: 10px solid #01659D;
+                    border-radius: 15px;
+                    background-color: #004967;
+                }
+            }
         }
 
     }
