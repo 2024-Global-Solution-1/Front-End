@@ -86,10 +86,131 @@ body{
         }
 
     }
+}
 
-    & footer{
-        padding: 20px;
+/* ---------------------------------------------------------------------------------------------------------------- */
+
+@media screen and (max-width:480px) {
+    body{
+        background-size: auto auto;
+    
+        & main{
+            margin: 30px;
+    
+            & #txt{
+                & h3{
+                    font-size: 40px;
+    
+                }
+                & p{
+                    padding: 10px;
+                    font-size: 20px;
+                }
+            }
+            
+            & #equipe{
+                & h3{
+                    font-size: 30px;
+                    padding: 80px;
+                }
+    
+                & #fotos{
+                    display: flex;
+                    flex-wrap: wrap;
+                    padding: 20px;
+                    width: 60vw;
+                    font-size: 15px;         
+    
+                    & #Erick{
+                        padding: 10px;
+                        
+                    }
+    
+                    & #Luiz{
+                        padding: 10px;
+
+    
+                    }
+    
+                    & #Vicenzo{
+                        padding: 10px;
+    
+                    }
+    
+                    & figcaption{
+                        width: 50vw;
+                        border: 10px solid #01659D;
+                        border-radius: 15px;
+                        background-color: #004967;
+                    }
+                }
+            }
+    
+        }
+    
+        & footer{
+            padding: 20px;
+        }
     }
+}
 
+/* ---------------------------------------------------------------------------------------------------------------- */
 
+@media screen and (max-width:768px) and (min-width:481px){
+    body{
+        background-size: auto auto;
+    
+        & main{
+            margin: 100px;
+    
+            & #txt{
+                & h3{
+                    font-size: 40px;
+    
+                }
+                & p{
+                    padding: 10px;
+                    font-size: 20px;
+                }
+            }
+            
+            & #equipe{
+                & h3{
+                    font-size: 30px;
+                    padding: 80px;
+                }
+    
+                & #fotos{
+                    display: flex;
+                    flex-wrap: wrap;
+                    padding: 20px;
+                    width: 60vw;
+                    font-size: 15px;         
+    
+                    & #Erick{
+                        padding: 10px;
+                        
+                    }
+    
+                    & #Luiz{
+                        padding: 10px;
+
+    
+                    }
+    
+                    & #Vicenzo{
+                        padding: 10px;
+    
+                    }
+    
+                    & figcaption{
+                        width: 50vw;
+                        border: 10px solid #01659D;
+                        border-radius: 15px;
+                        background-color: #004967;
+                    }
+                }
+            }
+        }
+    }
 }
