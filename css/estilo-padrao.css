@@ -196,3 +196,99 @@ footer{
         }
     }
 }
+
+/* ---------------------------------------------------------------------------------------------------------------- */
+
+@media screen and (max-width:768px) and (min-width:481px){
+    header{
+        background-size: 768px 18vh;
+        padding: 5px;
+        grid-template: auto/ 30vw 69vw;
+    
+        & figure{
+            display: grid;
+            height: 20px;
+            margin-left: 5vw;
+
+            & img{
+                height: 80px;
+                width: 80px;
+            }
+        }
+    
+        & nav{
+            display: none; 
+        }
+
+        & .burger {
+            margin-top: 3vh;
+            margin-right: 5vw;
+            justify-self: right;
+            position: relative;
+            width: 40px;
+            height: 30px;
+            background: transparent;
+            cursor: pointer;
+            display: block;
+
+            & input {
+            display: none;
+            }
+
+            & span {
+                display: block;
+                position: absolute;
+                height: 4px;
+                width: 100%;
+                background: black;
+                border-radius: 9px;
+                opacity: 1;
+                left: 0;
+                transform: rotate(0deg);
+                transition: .25s ease-in-out;
+            }
+            & span:nth-of-type(1) {
+                top: 0px;
+                transform-origin: left center;
+            }
+            & span:nth-of-type(2) {
+                top: 50%;
+                transform: translateY(-50%);
+                transform-origin: left center;
+            }
+            & span:nth-of-type(3) {
+                top: 100%;
+                transform-origin: left center;
+                transform: translateY(-100%);
+            }
+            & input:checked ~ span:nth-of-type(1) {
+                transform: rotate(45deg);
+                top: 0px;
+                left: 5px;
+            }
+            & input:checked ~ span:nth-of-type(2) {
+                width: 0%;
+                opacity: 0;
+            }
+            & input:checked ~ span:nth-of-type(3) {
+                transform: rotate(-45deg);
+                top: 28px;
+                left: 5px;
+            }
+        }
+    }
+    
+    footer{
+        padding: 0;
+        width: 768px;
+        font-size: 15px;
+
+        & .logo-roda{
+            & figcaption{
+                margin-top: 10px;
+                margin-left: 30px;
+                width: 30vw;
+            }
+        }
+    }
+}
