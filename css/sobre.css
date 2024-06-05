@@ -214,3 +214,64 @@ body{
         }
     }
 }
+
+/* ---------------------------------------------------------------------------------------------------------------- */
+
+@media screen and (max-width:1024px) and (min-width:769px){
+    body{
+        background-size: auto auto;
+    
+        & main{
+            margin: 160px;
+    
+            & #txt{
+                & h3{
+                    font-size: 50px;
+    
+                }
+                & p{
+                    padding: 10px;
+                    font-size: 30px;
+                }
+            }
+            
+            & #equipe{
+                & h3{
+                    font-size: 40px;
+                    padding: 80px;
+                }
+    
+                & #fotos{
+                    display: flex;
+                    flex-wrap: wrap;
+                    padding: 20px;
+                    width: 60vw;
+                    font-size: 20px;         
+    
+                    & #Erick{
+                        padding: 10px;
+                        
+                    }
+    
+                    & #Luiz{
+                        padding: 10px;
+
+    
+                    }
+    
+                    & #Vicenzo{
+                        padding: 10px;
+    
+                    }
+    
+                    & figcaption{
+                        width: 50vw;
+                        border: 10px solid #01659D;
+                        border-radius: 15px;
+                        background-color: #004967;
+                    }
+                }
+            }
+        }
+    }
+}
