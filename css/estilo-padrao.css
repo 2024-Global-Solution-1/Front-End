@@ -1,4 +1,6 @@
-@import url('https://fonts.cdnfonts.com/css/kavoon');  
+@import url('https://fonts.cdnfonts.com/css/kavoon'); 
+@import url('https://fonts.cdnfonts.com/css/josefin-sans');
+
 
 *{
     margin: 0;
@@ -39,9 +41,12 @@ header{
 }
 
 footer{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
     height: 190px;
     display: grid;
     grid-template: auto auto auto / 1fr 3fr 1fr;
+    color: #a7a7a7;
 
     & .redes{
         margin-top: 1.5vw;
@@ -51,13 +56,18 @@ footer{
     & .direita{
         grid-column: 3;
         display: flex;
-        justify-content: end;
+        justify-content: end;      
+
         & ul{
             & li{
+                font-family: 'Josefin Sans', sans-serif;
                 text-align: right;
                 padding: 1vh;
                 text-decoration: underline;
                 list-style-type: none;
+                & a{
+                    color: #a7a7a7;
+                    }
             }
         }
     }
