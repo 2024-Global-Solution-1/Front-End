@@ -184,7 +184,7 @@ footer{
     
     footer{
         padding: 0;
-        width: 480px;
+        width: 100vw;
         font-size: 13px;
 
         & .logo-roda{
@@ -280,8 +280,49 @@ footer{
     
     footer{
         padding: 0;
-        width: 768px;
+        width: 100vw;
         font-size: 15px;
+
+        & .logo-roda{
+            & figcaption{
+                margin-top: 10px;
+                margin-left: 30px;
+                width: 30vw;
+            }
+        }
+    }
+}
+
+/* ---------------------------------------------------------------------------------------------------------------- */
+
+@media screen and (max-width:1024px) and (min-width:769px){
+    header{
+        background-size: 1024px 18vh;
+        padding: 5px;
+        grid-template: auto/ 28vw 70vw;
+    
+        & figure{
+            display: grid;
+            height: 20px;
+            margin-left: 5vw;
+
+            & img{
+                height: 80px;
+                width: 80px;
+            }
+        }
+    
+        & nav{
+            margin-top: 4vh;
+        }
+
+    }
+    
+    footer{
+        padding: 0;
+        width: 100vw;
+        font-size: 15px;
+        grid-template: auto auto auto / 20vw 3fr 1fr;
 
         & .logo-roda{
             & figcaption{
