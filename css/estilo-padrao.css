@@ -282,6 +282,7 @@ footer{
         padding: 0;
         width: 100vw;
         font-size: 15px;
+        grid-template: auto auto auto / 20vw 57vw 20vw;
 
         & .logo-roda{
             & figcaption{
