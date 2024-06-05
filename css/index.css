@@ -89,8 +89,86 @@ body{
     }
 
     & footer{
-        padding: 2vw;
         background: linear-gradient(0deg, rgba(0,0,0,0.95) 0%, rgba(10,3,26,0.95) 100%);
     }
 
+}
+
+/* ------------------------------------------------------------------------------------------------------------- */
+
+@media screen and (max-width:480px) {
+    body{
+        background-size: 480px 132vh;
+    
+        & main{
+            background-size: 480px 130vh;
+    
+            & h1{
+                width: 480px;
+                font-size: 50px;
+            }
+    
+            & .titulo{
+                width: 70vw;
+                height: 20vh;
+    
+                & a{
+                    text-decoration: none;
+                }
+    
+                & h2{
+                    font-family: 'Irish Grover', sans-serif;
+                    margin-top: 20px;
+                    text-align: center;
+                    font-size: 30px;
+                    color: rgba(1, 101, 157, 1);
+                }
+    
+            }
+                & .texto{
+                    font-family: 'kavoon', sans-serif;
+                    font-size: 15px;
+                    color: rgb(255, 255, 255);
+                    border: 5px solid rgb(255, 255, 255);
+                    padding: 20px;
+                    width: 80vw;
+                    justify-self: center;
+                    align-self: center;
+                    & li{
+                        margin-left: 30px;
+                    }
+                }
+    
+            & #informacoes{
+                background: linear-gradient(0deg, rgba(0,96,140,0.95) 0%, rgba(9,149,168,0.95) 100%);
+                display: grid;
+                grid-template: 20vh / auto;
+            }
+    
+            & #pegada-carbono{
+                background: linear-gradient(0deg, rgba(0,0,62,0.95) 0%, rgba(0,102,145,0.95) 100%);
+                display: grid;
+                grid-template: 20vh / auto;
+    
+            }
+    
+            & #denuncia{
+                background-color: rgba(0,0,62,0.95);
+                display: grid;
+                grid-template: 20vh / auto;
+            }
+    
+            & #ongs{
+                background: linear-gradient(0deg, rgba(10,3,26,0.95) 0%, rgba(0,0,62,0.95) 100%);
+                display: grid;
+                grid-template: 20vh / auto;
+            }
+    
+        }
+    
+        & footer{
+            background: linear-gradient(0deg, rgba(0,0,0,0.95) 0%, rgba(10,3,26,0.95) 100%);
+        }
+    
+    }
 }
