@@ -1,0 +1,337 @@
+@import url('https://fonts.cdnfonts.com/css/kavoon'); 
+@import url('https://fonts.cdnfonts.com/css/josefin-sans');
+
+
+*{
+    margin: 0;
+    padding: 0;      
+}
+
+
+header{
+    background-image: url("../imgs/padroes/cabecalho.png");
+    background-repeat: no-repeat;
+    height: 26vh;
+    display: grid;
+    flex-wrap: wrap;
+    grid-template: auto/ 35vw 1fr;
+
+    & figure{
+        display: grid;
+        margin-left: 3vw;
+        
+    }
+
+    & nav{
+        display: grid;
+        margin-top: 7vh;
+        & ul{
+            display: flex;
+            list-style-type: none;
+            gap: 6vw;
+            & li{
+                & a{
+                    font-size: 20px;
+                    font-family: 'Kavoon', sans-serif;
+                    text-decoration: none;
+                }
+            }
+        }  
+    }
+    & .burger {
+        display: none;
+    }
+}
+
+footer{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    height: 190px;
+    display: grid;
+    grid-template: auto auto auto / 1fr 3fr 1fr;
+    color: #a7a7a7;
+    border-top: 1px solid white;
+
+    & .redes{
+        margin-top: 1.5vw;
+        display: flex;
+        justify-content: space-around;
+        padding: 10px;
+    }
+    & .direita{
+        grid-column: 3;
+        display: flex;
+        justify-content: end;
+        padding: 10px;      
+
+        & ul{
+            & li{
+                font-family: 'Josefin Sans', sans-serif;
+                text-align: right;
+                padding: 1vh;
+                text-decoration: underline;
+                list-style-type: none;
+                & a{
+                    color: #a7a7a7;
+                    }
+            }
+        }
+    }
+    & .linha{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        height: 0;
+    }
+    & p{
+        grid-row: 3;
+        grid-column: 2;
+        display: flex;
+        justify-content: center;
+    }
+    & .logo-roda{
+        display: grid;
+        padding: 10px;
+        grid-template: auto/ 4vw 1fr;
+        & figcaption{
+            margin-top: 6px;
+        }
+    }
+}
+
+/* ---------------------------------------------------------------------------------------------------------------- */
+
+@media screen and (max-width:480px) {
+    *{
+        margin: 0;
+        padding: 0;      
+    }
+
+    header{
+        background-size: 480px 18vh;
+        padding: 5px;
+    
+        & figure{
+            display: grid;
+            height: 20px;
+
+            & img{
+                height: 80px;
+                width: 80px;
+            }
+        }
+    
+        & nav{
+            display: none; 
+        }
+
+        & .burger {
+            margin-top: 2vh;
+            margin-right: 10px;
+            justify-self: right;
+            position: relative;
+            width: 40px;
+            height: 30px;
+            background: transparent;
+            cursor: pointer;
+            display: block;
+
+            & input {
+            display: none;
+            }
+
+            & span {
+                display: block;
+                position: absolute;
+                height: 4px;
+                width: 100%;
+                background: black;
+                border-radius: 9px;
+                opacity: 1;
+                left: 0;
+                transform: rotate(0deg);
+                transition: .25s ease-in-out;
+            }
+            & span:nth-of-type(1) {
+                top: 0px;
+                transform-origin: left center;
+            }
+            & span:nth-of-type(2) {
+                top: 50%;
+                transform: translateY(-50%);
+                transform-origin: left center;
+            }
+            & span:nth-of-type(3) {
+                top: 100%;
+                transform-origin: left center;
+                transform: translateY(-100%);
+            }
+            & input:checked ~ span:nth-of-type(1) {
+                transform: rotate(45deg);
+                top: 0px;
+                left: 5px;
+            }
+            & input:checked ~ span:nth-of-type(2) {
+                width: 0%;
+                opacity: 0;
+            }
+            & input:checked ~ span:nth-of-type(3) {
+                transform: rotate(-45deg);
+                top: 28px;
+                left: 5px;
+            }
+        }
+    }
+    
+    footer{
+        padding: 0;
+        width: 100vw;
+        font-size: 13px;
+        grid-template: auto auto auto / 20vw 3fr 1fr;
+
+        & .logo-roda{
+            & figcaption{
+                margin-top: 10px;
+                margin-left: 30px;
+                width: 30vw;
+            }
+        }
+    }
+}
+
+/* ---------------------------------------------------------------------------------------------------------------- */
+
+@media screen and (max-width:768px) and (min-width:481px){
+    header{
+        background-size: 768px 18vh;
+        padding: 5px;
+        grid-template: auto/ 30vw 69vw;
+    
+        & figure{
+            display: grid;
+            height: 20px;
+            margin-left: 5vw;
+
+            & img{
+                height: 80px;
+                width: 80px;
+            }
+        }
+    
+        & nav{
+            display: none; 
+        }
+
+        & .burger {
+            margin-top: 3vh;
+            margin-right: 5vw;
+            justify-self: right;
+            position: relative;
+            width: 40px;
+            height: 30px;
+            background: transparent;
+            cursor: pointer;
+            display: block;
+
+            & input {
+            display: none;
+            }
+
+            & span {
+                display: block;
+                position: absolute;
+                height: 4px;
+                width: 100%;
+                background: black;
+                border-radius: 9px;
+                opacity: 1;
+                left: 0;
+                transform: rotate(0deg);
+                transition: .25s ease-in-out;
+            }
+            & span:nth-of-type(1) {
+                top: 0px;
+                transform-origin: left center;
+            }
+            & span:nth-of-type(2) {
+                top: 50%;
+                transform: translateY(-50%);
+                transform-origin: left center;
+            }
+            & span:nth-of-type(3) {
+                top: 100%;
+                transform-origin: left center;
+                transform: translateY(-100%);
+            }
+            & input:checked ~ span:nth-of-type(1) {
+                transform: rotate(45deg);
+                top: 0px;
+                left: 5px;
+            }
+            & input:checked ~ span:nth-of-type(2) {
+                width: 0%;
+                opacity: 0;
+            }
+            & input:checked ~ span:nth-of-type(3) {
+                transform: rotate(-45deg);
+                top: 28px;
+                left: 5px;
+            }
+        }
+    }
+    
+    footer{
+        padding: 0;
+        width: 100vw;
+        font-size: 15px;
+        grid-template: auto auto auto / 20vw 57vw 20vw;
+
+        & .logo-roda{
+            & figcaption{
+                margin-top: 10px;
+                margin-left: 30px;
+                width: 30vw;
+            }
+        }
+    }
+}
+
+/* ---------------------------------------------------------------------------------------------------------------- */
+
+@media screen and (max-width:1024px) and (min-width:769px){
+    header{
+        background-size: 1024px 18vh;
+        padding: 5px;
+        grid-template: auto/ 28vw 70vw;
+    
+        & figure{
+            display: grid;
+            height: 20px;
+            margin-left: 5vw;
+
+            & img{
+                height: 80px;
+                width: 80px;
+            }
+        }
+    
+        & nav{
+            margin-top: 4vh;
+        }
+
+    }
+    
+    footer{
+        padding: 0;
+        width: 100vw;
+        font-size: 15px;
+        grid-template: auto auto auto / 20vw 3fr 1fr;
+
+        & .logo-roda{
+            & figcaption{
+                margin-top: 10px;
+                margin-left: 30px;
+                width: 30vw;
+            }
+        }
+    }
+}
