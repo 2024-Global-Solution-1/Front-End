@@ -7,98 +7,98 @@
 }
 
 & body{
-    width: auto;
-    height: 1368px;
-    background: linear-gradient(0deg, rgba(10,3,26,0.95) 53%, rgba(0,0,62,0.95) 100%);
+  width: auto;
+  height: 1368px;
+  background: linear-gradient(0deg, rgba(10,3,26,0.95) 53%, rgba(0,0,62,0.95) 100%);
 
-    & header{
-      & a{
-        color: rgba(0, 178, 179, 1);
-      }
+  & header{
+    & a{
+      color: rgba(0, 178, 179, 1);
+    }
+  }
+
+  & main{
+    display: grid;
+    grid-template: 20vh 20vh 70vh / auto;
+    gap: 10vh;
+
+    & h1{
+      font-family: 'Irish Grover', sans-serif;
+      margin-top: 5vh;
+      text-align: center;
+      font-size: 64px;
+      color: #fff;
     }
 
-    & main{
+    & p{
+      font-family: 'Irish Grover', sans-serif;
+      justify-self: center;
+      width: 30vw;
+      font-size: 32px;
+      text-align: center;
+      color: #fff;
+    }
+
+    & #primeira-pergunta{
       display: grid;
-      grid-template: 20vh 20vh 50vh / auto;
-      gap: 10vh;
+      grid-template: 10vh / auto;
+      width: 30vw;
+      height: 40vh;
+      background-color: rgba(0, 178, 179, 1);
+      border-radius: 55px;
+      justify-self: center;
 
-      & h1{
+      & h3{
         font-family: 'Irish Grover', sans-serif;
-        margin-top: 5vh;
+        align-self: center;
         text-align: center;
-        font-size: 64px;
-        color: #fff;
       }
 
-      & p{
-        font-family: 'Irish Grover', sans-serif;
+      & #botoes{
+        align-self: center;
         justify-self: center;
-        width: 30vw;
-        font-size: 32px;
-        text-align: center;
-        color: #fff;
-      }
-
-      & #primeira-pergunta{
-        display: grid;
-        grid-template: 10vh / auto;
-        width: 30vw;
-        height: 40vh;
-        background-color: rgba(0, 178, 179, 1);
+        display: flex;
+        width: 20vw;
+        height: 10vh;
+        padding: 30px;
+        background-color: rgba(0, 73, 103, 1);
+        border: 2px solid black;
         border-radius: 55px;
-        justify-self: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        font-size: 30px;
+        font-family: 'Chewy', sans-serif;
+        
 
-        & h3{
-          font-family: 'Irish Grover', sans-serif;
-          align-self: center;
-          text-align: center;
-        }
-
-        & #botoes{
-          align-self: center;
-          justify-self: center;
-          display: flex;
-          width: 20vw;
-          height: 10vh;
-          padding: 30px;
-          background-color: rgba(0, 73, 103, 1);
+        & #logar{
+          padding: 10px;
+          background-color: rgba(0, 178, 179, 1);
           border: 2px solid black;
           border-radius: 55px;
-          justify-content: space-around;
-          flex-wrap: wrap;
-          font-size: 30px;
+          
           
 
-          & #logar{
-            padding: 10px;
-            background-color: rgba(0, 178, 179, 1);
-            border: 2px solid black;
-            border-radius: 55px;
-            
-
-            & a{
-              text-decoration: none;
-              color: #fff;
-            }
-          }
-
-          & #cadastrar{
-            padding: 10px;
-            border: 2px solid black;
-            border-radius: 55px;
-            background-color: rgba(0, 178, 179, 1);
-
-            & a{
-              text-decoration: none;
-              color: #fff;
-            }
+          & a{
+            text-decoration: none;
+            color: #fff;
           }
         }
 
+        & #cadastrar{
+          padding: 10px;
+          border: 2px solid black;
+          border-radius: 55px;
+          background-color: rgba(0, 178, 179, 1);
+
+          & a{
+            text-decoration: none;
+            color: #fff;
+          }
+        }
       }
 
     }
-
+  }
 }
 .wrapper {
     --input-focus: #2d8cf0;
