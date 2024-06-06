@@ -116,16 +116,10 @@
       }
     }
 
-    & h3{
-      font-family: 'Irish Grover', sans-serif;
-      font-size: 50px;
-      color: #fff;
-      text-align: center;
-    }
-
     & .div-btn-fechar{
+      display: flex;
       margin-right: 30px;
-      justify-self: right;
+      justify-content: end;
       font-size: 40px;
       font-family: 'Irish Grover', sans-serif;
 
@@ -135,11 +129,15 @@
       }
     }
 
+    & .checkbox{
+      margin-left: 5vw;
+    }
+
     & button[type=submit]{
       border: 1px solid white;
       border-radius: 30px;
       padding: 10px;
-      width: 8vw;
+      width: 10vw;
       color: rgba(72, 200, 255, 1);
       background-color: rgba(0, 73, 103, 1);
       font-size: 20px;
@@ -147,8 +145,6 @@
     }
 
     &  #login{
-      display: grid;
-      grid-template: 6vh 10vh 40vh/ auto;
       align-self: center;
       justify-self: center;
       width: 50vw;
@@ -156,19 +152,67 @@
       border-radius: 39px;
       background-color: rgba(217, 217, 217, 0.6);
 
+      & h3{
+        font-family: 'Irish Grover', sans-serif;
+        font-size: 50px;
+        color: #fff;
+        text-align: center;
+      }
+
+      & label{
+        margin-left: 20px;
+        font-family: 'Irish Grover', sans-serif;
+        font-size: 20px;
+      }
+
+      & input{
+        border: 5px solid rgba(0, 73, 103, 1);
+        border-radius: 10px;
+      }
+
       & fieldset{
         display: grid;
-        grid-template: 20vh 20vh / auto;
+        grid-template: 60vh 10vh / auto;
         border: none;
 
         & .forms{
           display: grid;
-          grid-template: 5vh 5vh 5vh 5vh / auto;
+          grid-template: 20vh 10vh 10vh 5vh / auto;
+          background-color: rgba(217, 217, 217, 0.6);
+          border-radius: 50px;
+          margin-left: 5vw;
+          width: 40vw;
+          gap: 20px;
         }
 
         & #btn-logar{
           align-self: flex-end;
           justify-self: center;
+        }
+
+        & .id{
+          display: grid;
+          grid-template: 3vh 5vh / auto;
+          align-self: flex-end;
+          width: 30vw;
+          margin-left: 5vw;
+
+        }
+
+        & .email{
+          display: grid;
+          grid-template: 3vh 5vh / auto;
+          align-self: center;
+          width: 30vw;
+          margin-left: 5vw;
+        }
+
+        & .senha{
+          display: grid;
+          grid-template: 3vh 5vh / auto;
+          align-self: center;
+          width: 30vw;
+          margin-left: 5vw;
         }
       }
       
