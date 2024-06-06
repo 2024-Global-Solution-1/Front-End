@@ -95,6 +95,22 @@
             color: #fff;
           }
         }
+
+        & #sucesso{
+          background-color: rgba(6, 223, 14, 0.6);
+          font-size: 40px;
+          font-family: 'Irish Grover', sans-serif;
+          border: 1px solid black;
+          padding: 10px;
+        }
+
+        & #erro{
+          font-size: 40px;
+          font-family: 'Irish Grover', sans-serif;
+          padding: 10px;
+          background-color: rgba(223, 6, 6, 0.6);
+          border: 1px solid black;
+        }
       }
 
     }
