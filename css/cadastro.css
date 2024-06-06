@@ -217,6 +217,64 @@
       }
       
     }
+
+    & #tipoCadastro{
+      align-self: center;
+      justify-self: center;
+      width: 60vw;
+      height: 55vh;
+      border-radius: 39px;
+      background-color: rgba(217, 217, 217, 0.7);
+
+      & h3{
+        font-family: 'Irish Grover', sans-serif;
+        font-size: 50px;
+        color: #fff;
+        text-align: center;
+      }
+      
+      & #opcoes{
+        display: grid;
+        grid-template: 10vh 20vh / auto;
+        background-color: rgba(217, 217, 217, 0.6);
+        border-radius: 50px;
+        margin-left: 8vw;
+        width: 45vw;
+        gap: 20px;
+
+        & #a3btn{
+          justify-self: center;
+          align-self: center;
+          display: grid;
+          grid-template: auto / 10vw 10vw 10vw;
+          gap: 40px;
+
+          & a{
+            justify-self: center;
+            text-align: center;
+            text-decoration: none;
+            background-color: rgba(0, 73, 103, 1);
+            width: max-content;
+            color: rgba(72, 200, 255, 1);
+            font-size: 32px;
+            border: 3px solid black;
+            border-radius: 30px;
+            width: 9vw;
+            padding: 13px;
+            font-family: 'Chewy', sans-serif;
+            flex-wrap: wrap;
+          }
+        }
+
+        & p{
+          align-self: center;
+          width: max-content;
+          font-size: 24px;
+          font-family: 'Chewy', sans-serif;
+          color: #000;
+        }
+      }
+    }
   }
 }
 
