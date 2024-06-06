@@ -87,6 +87,57 @@
             </div>
         </dialog>
         
+        <dialog id="cadastroUser">
+            <div class="div-btn-fechar"><a href="#" class="botaozinho btn-fechar" id="btnFechar1">X</a></div>
+            <h3>Login</h3>
+            <form action="#" method="get">
+                <fieldset>
+                    <div class="forms">
+                        <div class="nome-completo">
+                            <label for="idNome">Nome Completo</label>
+                            <input type="text" name="txtNomeCompl" id="idNomeCompl" placeholder="Insira seu Nome Completo" required="required" minlength="3" class="grupo-input">
+                            <label for="CampoNmCompl">*Campo Obrigatório</label>
+                        </div>
+
+                        <div class="user-name">
+                            <label for="idUser">User-name</label>
+                            <input type="text" name="txtUserName" id="idUser" placeholder="Insira um User Name" minlength="5" maxlength="50" class="grupo-input">
+                        </div>
+
+                        <div class="idade">
+                            <label for="idIdade">Idade</label>
+                            <input type="number" name="txtIdade" id="idIdade" placeholder="Insira a sua idade"  minlength="2" maxlength="3" class="grupo-input">
+                        </div>
+
+                        <div class="endereco">
+                            <label for="idendereco">Endereço</label>
+                            <input type="text" name="txtEndereco" id="idEndereco" placeholder="Insira seu Endereço"  minlength="10" class="grupo-input">
+                        </div>
+
+                        <div class="Email">
+                            <label for="idEmail">Nome Completo</label>
+                            <input type="email" name="txtEmail" id="idEmail" placeholder="Insira seu Email" required="required" minlength="7" class="grupo-input">
+                            <label for="CampoEmail">Campo Obrigatório</label>
+                        </div>
+
+                        <div class="Senha">
+                            <label for="idSenha">Senha</label>
+                            <input type="password" name="txtSenha" id="idSenha" placeholder="Insira sua Senha" required="required" minlength="5" class="grupo-input">
+                            <label for="CampoSenha">*Campo Obrigatório</label>
+                        </div>
+
+                        <div class="telefone">
+                            <label for="idTelefone">Telefone</label>
+                            <input type="number" name="txtTelefone" id="idTelefone" placeholder="Insira Telefone"  minlength="11" class="grupo-input">
+                        </div>
+
+                    </div>
+                </fieldset>
+            </form>
+            <div id="btn-logar">
+                <button type="submit" class="grupo-input">Logar</button>
+            </div>
+        </dialog>
         <dialog id="situcao">
             <!--id=sucesso h3Login Feito com Sucesso-->
             <!--id=erro h3Dados Invalidos-->

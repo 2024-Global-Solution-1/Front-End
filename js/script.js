@@ -1,3 +1,4 @@
+/*Partes de acesso do Login */
 const btnLogin = document.querySelector("#logar");
 const btnFecharLogin = document.querySelector("#btnFechar1");
 const modalLogin = document.querySelector("#login");
@@ -9,6 +10,7 @@ btnFecharLogin.addEventListener('click', ()=>{
     modalLogin.close();
 })
 
+/*Parte de acesso do tipo de cadastro */
 const btnTipos = document.querySelector("#cadastrar");
 const btnFecharTipos = document.querySelector("#btnFechar2");
 const modalTipos = document.querySelector("#tipoCadastro");
@@ -19,3 +21,6 @@ btnTipos.addEventListener('click', ()=>{
 btnFecharTipos.addEventListener('click', ()=>{
     modalTipos.close();
 })
+
+/* */
+
