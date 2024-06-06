@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro</title>
     <link rel="icon" href="../imgs/padroes/logo.png">
     <link rel="stylesheet" href="../css/estilo-padrao.css">
     <link rel="stylesheet" href="../css/cadastro.css">
-
+    <script src="../js/script.js" defer></script>
+    <title>Cadastro</title>
 </head>
 <body>
     <header>
@@ -32,6 +32,57 @@
                 <div id="cadastrar"><a href="#">Cadastro</a></div>
             </div>
         </div>
+
+        <dialog id="login">
+            <div class="div-btn-fechar">
+                <a href="#" class="botaozinho btn-fechar" id="btnFechar1">X</a>
+            </div>
+            <h3>Login</h3>
+            <form action="#" method="get">
+                <fieldset>
+                    <div class="forms">
+                        <div class="id">
+                            <label for="idId">Id</label>
+                            <input type="number" name="numId" id="idId" placeholder="Digite seu Id" required="required" minlength="4" class="grupo-input">
+                        </div>
+
+                        <div class="email">
+                            <label for="idEmail">Email</label>
+                            <input type="email" name="txtEmail" id="idEmail" placeholder="Digite seu Email" required="required" minlength="7" class="grupo-input">
+                        </div>
+
+                        <div class="senha">
+                            <label for="idSenha">Senha</label>
+                            <input type="password" name="txtSenha" id="idSenha" placeholder="Digite sua senha" required="required" minlength="5" class="grupo-input">
+                        </div>
+                        <div class="checkbox"><input type="checkbox" name="txtLembrar" id="idLembrar" value="lemebre" checked="checked"><label for="idLembrar">Lembrar-me</label>
+                        </div>
+                        <div id="btn-logar">
+                            <button type="submit" class="grupo-input">Logar</button>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </dialog>
+
+        <dialog id="tipoCadastro">
+            <div class="div-btn-fechar">
+                <a href="#" class="botaozinho btn-fechar" id="btnFechar2">X</a>
+            </div>
+            <h3>Tipo Cadastro</h3>
+            <div id="opcoes">
+                <p>Escolha o tipo de cadastro que se encaixa na sua situação</p>
+                <div id="3btn">
+                    <a href="#" id="btn1">Empresa</a>
+                    <a href="#" id="btn2">Ong</a>
+                    <a href="#" id="btn3">User</a>
+                </div>
+            </div>
+        </dialog>
+
+
+
+
     </main>
 
    <footer>
