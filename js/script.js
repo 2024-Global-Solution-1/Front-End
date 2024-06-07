@@ -65,3 +65,60 @@ btnFecharOng.addEventListener('click', ()=>{
     modalOng.close();
 });
 
+/*let modalCadastroRealizado = document.querySelector("#CadastroRealizado")
+
+function cadastroRealizado(idTipo){
+    if(idTipo == "pessoa"){
+        let min = 1001;
+        let max = 1999;
+        IdPessoa = Math.floor(Math.random() * (max - min + 1));
+        let modalFechar = modalUser;
+    }
+    else if(idTipo == "ong"){
+        let min = 2001;
+        let max = 2999;
+        Idong = Math.floor(Math.random() * (max - min + 1));
+        let modalFechar = modalOng;
+    }
+    else if(idTipo == "empresa"){
+        let min = 3001;
+        let max = 3999;
+        IdEmpresa = Math.floor(Math.random() * (max - min + 1));
+        let modalFechar = modalEmpresa;
+    }
+
+    modalCadastroRealizado.showModal();
+    console.log("Não ta indo")
+    return true
+}
+
+const btnFecharCadastroRealizado = document.querySelector("#btnFechar6");
+
+btnFecharCadastroRealizado.addEventListener('click', ()=>{
+    modalCadastroRealizado.close();
+});
+
+ // JavaScript para controlar o modal
+ const modal = document.getElementById("meuModal");
+ const span = document.getElementsByClassName("close")[0];
+ const form = document.getElementById("meuForm");
+
+ // Quando o usuário submete o formulário
+ form.onsubmit = function(event) {
+     event.preventDefault(); // Impede o envio padrão do formulário
+     modal.style.display = "block"; // Mostra o modal
+ }
+
+ // Quando o usuário clica no X para fechar o modal
+ span.onclick = function() {
+     modal.style.display = "none";
+ }
+
+ // Quando o usuário clica fora do modal para fechar
+ window.onclick = function(event) {
+     if (event.target == modal) {
+         modal.style.display = "none";
+     }
+ }*/
+
+
