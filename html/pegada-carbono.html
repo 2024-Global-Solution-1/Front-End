@@ -34,40 +34,50 @@
             <fieldset>
                 <div class="form">
                     <h2>Pegada de Carbono</h2>
-                    <div id="divVeicPessoal">
+                    <div class="dados">
                         <label for="VeicPessoal">Coloque a média anual da quantidade de Km rodados com seu veículo pessoal</label>
-                        <input type="range" id="kmVeiculo" name="kmVeiculo" class="Km" min="0" max="20000" oninput = "spanValor(this.value, this.className, 1)">
-                        <span id="rangeValor1">10000 Km</span>
+                        <input type="range" id="kmVeiculo" name="kmVeiculo" class="Km" min="0" max="20000" value="0" oninput = "spanValor(this.value, this.className, 1)">
+                        <span id="rangeValor1">0 Km</span>
                     </div>
 
                     <div id="opcoesCarro">
                         <label for="opcoes">Escolha a opção de carro que o senhor possui, caso não possua pode selecionar qualquer uma das opções</label>
 
-                        <input type="radio" id="idOpcao1" name="opcao" value="Gasolina" required>
-                        <label for="gasolina">Gasolina</label>
-                        <input type="radio" id="idOpcao2" name="opcao" value="Etanol">
-                        <label for="Etanol">Etanol</label>
-                        <input type="radio" id="idOpcao3" name="opcao" value="Diesel">
-                        <label for="Diesel">Diesel</label>
+                        <div class="radio">
+                            <div class="coisa2">
+                                <input type="radio" id="idOpcao1" name="opcao" value="Gasolina" required>
+                                <label for="gasolina">Gasolina</label>
+                            </div>
+                            
+                            <div class="coisa2">
+                                <input type="radio" id="idOpcao2" name="opcao" value="Etanol">
+                                <label for="Etanol">Etanol</label>
+                            </div>
+                           
+                            <div class="coisa2">
+                                <input type="radio" id="idOpcao3" name="opcao" value="Diesel">
+                                <label for="Diesel">Diesel</label>
+                            </div>
+                        </div>   
                     </div>
 
-                    <div id="divOnibus">
+                    <div class="dados">
                         <label for="idOnibus">Coloque a média anual da quantidade de Km que percorre em um transporte público</label>
-                        <input type="range" id="kmOnibus" class="Km" name="kmOnibus" min="0" max="10000" oninput = "spanValor(this.value, this.className, 2)">
-                        <span id="rangeValor2">5000 Km</span>
+                        <input type="range" id="kmOnibus" class="Km" name="kmOnibus" min="0" max="10000" value="0" oninput = "spanValor(this.value, this.className, 2)">
+                        <span id="rangeValor2">0 Km</span>
                     </div>
                     
-                    <div id="divAviao">
+                    <div class="dados">
                         <label for="Aviao">Coloque a média anual da quantidade de Km rodados que percorre em vôos</label>
-                        <input type="range" id="kmAviao" class="Km" name="kmAviao" min="0" max="5000"
+                        <input type="range" id="kmAviao" class="Km" name="kmAviao" min="0" max="5000" value="0"
                         oninput = "spanValor(this.value, this.className, 3)">
-                        <span id="rangeValor3">2500 Km</span>
+                        <span id="rangeValor3">0 Km</span>
                     </div>
                    
-                    <div id="divKwh">
+                    <div class="dados">
                         <label for="kwhTxt">Coloque a média anual de consumo de energia elétrica em kWh dentro da sua casa</label>
-                        <input type="range" id="idKwh" class="kWh" name="idKwh" min="0" max="50000" oninput="spanValor(this.value, this.className, 4)">
-                        <span id="rangeValor4">25000 kWh</span>
+                        <input type="range" id="idKwh" class="kWh" name="idKwh" min="0" max="50000" value="0" oninput="spanValor(this.value, this.className, 4)">
+                        <span id="rangeValor4">0 kWh</span>
                     </div>
                 </div>
                 <div id="btn-enviar">
