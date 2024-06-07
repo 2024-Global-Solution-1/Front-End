@@ -172,12 +172,12 @@
                         <div class="nome-empresa">
                             <label for="idNomeEmpresa">Nome da Empresa</label>
                             <input type="text" name="txtNomeEmpresa" id="idNomeEmpresa" placeholder="Insira o nome da empresa" required="required" minlength="5" class="grupo-input">
-                            <label for="CampoNmEmpre">*Campo Obrigatório</label>
+                            <label for="CampoNmEmpresa">*Campo Obrigatório</label>
                         </div>
 
                         <div class="enderecoEmpresa">
                             <label for="idEnderecoEmpre">Endereço</label>
-                            <input type="text" name="txtEnderecoEm" id="idEnderecoEm" placeholder="Insira o endereço da empresa"  minlength="10" class="grupo-input">
+                            <input type="text" name="txtEnderecoEmpresa" id="idEnderecoEmpresa" placeholder="Insira o endereço da empresa"  minlength="10" class="grupo-input">
                         </div>
 
                         <div class="email-empresa">
@@ -235,14 +235,115 @@
             </form>
         </dialog>
 
+        <dialog id="cadastroOng">
+            <div class="div-btn-fechar"><a href="#" class="botaozinho btn-fechar" id="btnFechar5">X</a></div>
+            <h3>Cadastrar</h3>
+            <form action="#" method="get">
+                <fieldset>
+                    <div class="forms">
+                        <div id="Nomes">
+                            <div class="nome-ong">
+                                <label for="idNomeOng">Nome da Ong</label>
+                                <input type="text" name="txtNomeOng" id="idNomeOng" placeholder="Insira o nome da Ong" required="required" minlength="5" class="grupo-input">
+                                <label for="CampoNmOng">*Campo Obrigatório</label>
+                            </div>
+
+                            <div class="sigla-ong">
+                                <input type="text" name="txtNomeOng" id="idNomeOng" placeholder="Insira a sigla da Ong"  minlength="5" class="grupo-input">
+                            </div>
+
+                        </div>
+
+                        <div class="data-fundacao">
+                            <label for="idDataFundacao">Data de Fundação</label>
+                            <input type="date" name="dateDataFundacao" id="idEnderecoEm" placeholder="DD/MM/YYYY"  minlength="10" required class="grupo-input">
+                            <label for="CampoDtFundacao">*Campo Obrigatório</label>
+                        </div>
+
+                        <div class="endereco-ong">
+                            <label for="idEnderecoOng">Endereço</label>
+                            <input type="text" name="txtEnderecoOng" id="idEnderecoOng" placeholder="Insira o endereço da Ong" minlength="10" class="grupo-input">
+                        </div>
+
+                        <div class="email-ong">
+                            <label for="idEmailOng">Email de Contato</label>
+                            <input type="email" name="txtEmailOng" id="idEmailOng" placeholder="Insira o seu email de contato" minlenght="7" required="required" class="grupo-input">
+                            <label for="CampoEmailOng">*Campo Obrigatório</label></div>
+
+                        <div class="website-ong">
+                            <label for="idWebOng">Website</label>
+                            <input type="url" name="txtWebsiteOng" id="idWebOng" placeholder="Insira o Url do website da Ong" minlength="10" class="grupo-input">
+                        </div>
+
+                        <div class="telefone-Ong">
+                            <label for="idTelefoneOng">Telefone</label>
+                            <input type="tel" name="txtTelefoneOng" id="idTelefoneOng" placeholder="Insira Telefone da Ong"  minlength="11" class="grupo-input">
+                        </div>
+
+                        <div class="senha-ong">
+                            <label for="idSenhaOng">Senha</label>
+                            <input type="password" name="txtSenhaOng" id="idSenhaOng" placeholder="Insira sua Senha" required="required" minlength="5" class="grupo-input">
+                            <label for="CampoSenha">*Campo Obrigatório</label>
+                        </div>
+                        
+                        <div class="redes-socias-ong">
+                            <label for="idRedesOng">Redes Sociais</label>
+
+                            <div class="facebook-ong">
+                                <label for="idFaceOng">Facebook</label>
+                                <input type="text" name="txtFacebookOng" id="idFacebookOng" placeholder="Facebook" class="grupo-input">
+                            </div>
+
+                            <div class="instagram-ong">
+                                <label for="idInstaOng">Instagram</label>
+                                <input type="text" name="txtInstagramOng" id="idInstagramOng" placeholder="Instagram" class="grupo-input">
+                            </div>
+
+                            <div class="Youtube-ong">
+                                <label for="idYouOng">Youtube</label>
+                                <input type="text" name="txtYoutubeOng" id="idYoutubeOng" placeholder="Youtube" class="grupo-input">
+                            </div>
+
+                            <div class="Twitter">
+                                <label for="idXOng">Twitter</label>
+                                <input type="text" name="txtXOng" id="idXOng" placeholder="Twitter" class="grupo-input">
+                            </div>
+                        </div>
+
+                        <div class="descricao-missao">
+                            <label for="idDescricaoMissao">Descreva a missão da ong</label>
+                            <input type="text" name="txtDescricaoMissa" id="idDescricaoMissao" placeholder="Escreva aqui a sobre a missão da ong..." class="grupo-input" required>
+                            <label for="DescricaoMissao">*Campo Obrigatório</label>
+                        </div>
+
+                        <div class="descricao-visao">
+                            <label for="idDescricaoVisao">Descreva a visão da ong</label>
+                            <input type="text" name="txtDescricaoVisao" id="idDescricaoVisao" placeholder="Escreva aqui a sobre a visão da ong..." class="grupo-input" required>
+                            <label for="DescricaoVisao">*Campo Obrigatório</label>
+                        </div>
+                        <div class="descricao-area">
+                            <label for="idDescricaoArea">Descreva a área de atuação da ong</label>
+                            <input type="text" name="txtDescricaoArea" id="idDescricaoArea" placeholder="Escreva aqui a sobre a área de atuação da ong..." class="grupo-input" required>
+                            <label for="DescricaoArea">*Campo Obrigatório</label>
+                        </div>
+                        
+
+                    </div>
+                    <div id="btn-cadastrar">
+                        <button type="submit" class="grupo-input">Enviar</button>
+                    </div>
+                </fieldset>
+            </form>
+        </dialog>
+
+
         <dialog id="situcao">
             <!--id=sucesso h3Login Feito com Sucesso-->
             <!--id=erro h3Dados Invalidos-->
 
         </dialog>
 
-
-
+        
     </main>
 
    <footer>

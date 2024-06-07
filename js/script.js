@@ -52,4 +52,16 @@ btnFecharEmpresa.addEventListener('click', ()=>{
 });
 
 
+/*Parte de acesso do cadastro de Ong*/
+const btnOng = document.querySelector("#btn2");
+const modalOng = document.querySelector("#cadastroOng");
+const btnFecharOng = document.querySelector("#btnFechar5");
+
+btnOng.addEventListener('click', ()=>{
+    modalOng.showModal();
+    modalTipos.close();
+});
+btnFecharOng.addEventListener('click', ()=>{
+    modalOng.close();
+});
 
