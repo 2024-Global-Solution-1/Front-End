@@ -19,7 +19,7 @@
 
   & main{
     display: grid;
-    grid-template: 30vh 50vh / auto;
+    grid-template: 30vh 70vh / auto;
 
     & h3{
         justify-self: center;
