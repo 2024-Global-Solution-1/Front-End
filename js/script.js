@@ -1,21 +1,26 @@
 const questions = [
-    { question: "Erick é baitola", answer: true },
-    { question: "The sky is blue.", answer: true },
-    { question: "The grass is red.", answer: false },
-    { question: "The ocean is made of chocolate.", answer: false },
-    { question: "Cows can fly.", answer: false },
-    { question: "Fish can swim.", answer: true },
-    { question: "Birds can swim.", answer: true },
-    { question: "The sun is a star.", answer: true },
-    { question: "Humans need oxygen to survive.", answer: true },
-    { question: "There are 25 hours in a day.", answer: false },
-    { question: "Water boils at 100 degrees Celsius.", answer: true },
-    { question: "The Earth is flat.", answer: false },
-    { question: "Fire is cold.", answer: false },
-    { question: "Ice is hot.", answer: false },
-    { question: "Plants need sunlight to grow.", answer: true },
-    { question: "The moon is made of cheese.", answer: false },
-    { question: "CJ is white", answer: false },
+    { question: "O Oceano Atlântico é o segundo maior oceano do mundo.", answer: true },
+    { question: "O Oceano Pacífico é menor que o Oceano Índico.", answer: false },
+    { question: "Plâncton é um tipo de peixe.", answer: false },
+    { question: "As algas marinhas contribuem para a produção de oxigênio na Terra.", answer: true },
+    { question: "Os polvos têm três corações.", answer: true },
+    { question: "As tartarugas marinhas sempre voltam à praia onde nasceram para pôr seus ovos.", answer: true },
+    { question: "As medusas são compostas por 90% de água.", answer: false },
+    { question: "A alga marinha pode crescer até 90 metros de comprimento.", answer: false },
+    { question: "Os cavalos-marinhos machos são os que ficam grávidos.", answer: true },
+    { question: "A poluição por plástico mata cerca de 1 milhão de aves marinhas todos os anos.", answer: true },
+    { question: "O plástico leva cerca de 20 anos para se decompor no oceano.", answer: false },
+    { question: "O fenômeno da maré negra é causado por derramamento de petróleo.", answer: true },
+    { question: "O dióxido de carbono causa o aumento da acidez nos oceanos.", answer: true },
+    { question: "Os microplásticos são partículas de plástico menores que 5 milímetros.", answer: true },
+    { question: "O coral-branco é um sinal de que o recife está saudável.", answer: false },
+    { question: "Os camarões mantis têm a capacidade de quebrar vidro com suas garras", answer: true },
+    { question: "O gelo marinho ajuda a regular a temperatura global refletindo a luz solar.", answer: true },
+    { question: "O aumento da temperatura das águas é um dos causadores do branqueamento dos corais.", answer: true },
+    { question: "A pesca de arrasto é uma técnica de pesca sustentável.", answer: false },
+    { question: "A salizinação dos oceanos pode prejudicar os organismos que formam conchas de carbonato de cálcio.", answer: false },
+    { question: "Os tubarões têm sido chamados de 'polícia dos oceanos' devido ao seu papel na regulação das populações de peixes.", answer: true },
+    { question: "Os oceanos absorvem mais de 99% do calor gerado pelo aquecimento global.", answer: true },
 ];
 
 let currentQuestionIndex = 0;
@@ -29,6 +34,7 @@ const falseButton = document.getElementById('false-btn');
 const resultContainer = document.getElementById('result-container');
 const resultElement = document.getElementById('result');
 const playAgainButton = document.getElementById('play-again-btn');
+const gameTitle = document.getElementById('game-title');
 
 trueButton.addEventListener('click', () => selectAnswer(true));
 falseButton.addEventListener('click', () => selectAnswer(false));
@@ -58,22 +64,42 @@ function resetState() {
 }
 
 function selectAnswer(answer) {
+
+    trueButton.disabled = true;
+    falseButton.disabled = true;
+
+    if (shuffledQuestions[currentQuestionIndex].answer === true) {
+        gameTitle.innerText = "Verdadeiro"
+    } else {
+        gameTitle.innerText = "Falso"
+    }
+
     if (shuffledQuestions[currentQuestionIndex].answer === answer) {
         score++;
     }
 
-    currentQuestionIndex++;
-    if (currentQuestionIndex < shuffledQuestions.length) {
-        setNextQuestion();
-    } else {
-        showResult();
-    }
+    setTimeout(() => {
+        currentQuestionIndex++;
+        if (currentQuestionIndex < shuffledQuestions.length) {
+            setNextQuestion();
+        } else {
+            showResult();
+        }
+        trueButton.disabled = false;
+        falseButton.disabled = false;
+        gameTitle.innerText = "Quiz Game"
+    }, 1000);
+
 }
+
+
+
+
 
 function showResult() {
     questionContainer.style.display = 'none';
     resultContainer.style.display = 'block';
-    resultElement.innerText = `Your score: ${score}`;
+    resultElement.innerText = `Sua pontuação: ${score}`;
 }
 
 startGame();
