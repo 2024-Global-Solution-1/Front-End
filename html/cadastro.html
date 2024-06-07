@@ -91,7 +91,7 @@
         <dialog id="cadastroUser">
             <div class="div-btn-fechar"><a href="#" class="botaozinho btn-fechar" id="btnFechar3">X</a></div>
             <h3>Cadastrar</h3>
-            <form action="#" method="get">
+            <form action="#" method="get" id="pessoa" onsubmit="cadastroRealizado(this.id)">
                 <fieldset>
                     <div class="forms">
                         <div class="nome">
@@ -168,7 +168,7 @@
         <dialog id="cadastroEmpresa">
             <div class="div-btn-fechar"><a href="#" class="botaozinho btn-fechar" id="btnFechar4">X</a></div>
             <h3>Cadastrar</h3>
-            <form action="#" method="get">
+            <form action="#" method="get" id="empresa" onsubmit="cadastroRealizado(this.id)">
                 <fieldset>
                     <div class="forms">
                         <div class="nome">
@@ -235,7 +235,7 @@
         <dialog id="cadastroOng">
             <div class="div-btn-fechar"><a href="#" class="botaozinho btn-fechar" id="btnFechar5">X</a></div>
             <h3>Cadastrar</h3>
-            <form action="#" method="get">
+            <form action="#" method="get" id="ong" onsubmit="cadastroRealizado(this.id)">
                 <fieldset>
                     <div class="forms">
                         <div id="identificacao">
@@ -342,6 +342,15 @@
 
         </dialog>
 
+        <dialog id="CadastroRealizado">
+            <div class="div-btn-fechar">
+                <a href="#" class="botaozinho btn-fechar" id="btnFechar6">X</a></div>
+            <h3>Cadastro Realizado</h3>
+            <div>
+                <!--Aqui Vou colocar a seguinte tag <p>Seu Id da sua conta é : $$$$. Não se esqueçaz</p>-->
+                <p>Clique no "X" para fechar esse menu</p>
+            </div>
+        </dialog>
         
     </main>
 
@@ -361,7 +370,6 @@
         </section>
         <section class="direita">
             <ul>
-                <li>Entre em contato</li>
                 <li><a href="./sobre.html">Quem somos</a></li>
                 <li><a href="./denuncia.html">Denúncia</a></li>
             </ul>
