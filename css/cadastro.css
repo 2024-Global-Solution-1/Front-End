@@ -605,6 +605,12 @@ input[type=number]::-webkit-inner-spin-button {
         }
       }
       & #cadastroUser{
+        & fieldset{
+          display: grid;
+          grid-template: 160vh 25vh / auto;
+          border: none;
+        }
+
         & .forms{
           grid-template: 10vh 10vh 10vh 10vh 10vh 10vh 10vh 40vh/ auto;
         }
@@ -682,6 +688,24 @@ input[type=number]::-webkit-inner-spin-button {
         }
       }
 
+      & #tipoCadastro{
+        
+        & #opcoes{
+          margin-left: 0;
+          width: 55vw;
+          gap: 20px;
+        }
+      }
+
+      & #cadastroUser{
+  
+        & fieldset{
+          display: grid;
+          grid-template: 160vh 25vh / auto;
+          border: none;
+        }
+      }
+
       & #cadastroOng{
   
         & h3{
@@ -751,6 +775,15 @@ input[type=number]::-webkit-inner-spin-button {
           height: 10vh;
           padding: 30px;
           font-size: 20px;
+        }
+      }
+
+      & #cadastroUser{
+  
+        & fieldset{
+          display: grid;
+          grid-template: 160vh 25vh / auto;
+          border: none;
         }
       }
 
