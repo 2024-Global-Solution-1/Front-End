@@ -1,59 +1,180 @@
+@import url('https://fonts.cdnfonts.com/css/kavoon');
+@import url('https://fonts.cdnfonts.com/css/irish-grover');  
+@import url('https://fonts.cdnfonts.com/css/chewy');
+
+*{
+  margin: 0;
+  padding: 0;      
+}
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    height: 100vh;
-    margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(0deg, rgba(0,96,140,1) 0%, rgba(9,149,168,1) 79%);
+  margin: 0;
+
+  & header{
+      & a{
+        color: #004967;
+      }
   }
-  
-  .conteudo {
-    display: flex;
-    overflow-x: auto;
-    padding: 20px;
+
+
+  & main{
+    display: grid;
+    grid-template: 30vh 90vh 60vh / auto;
     gap: 20px;
-    border: 1px solid #ccc;
-    background-color: #0b0ff1;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+    & .titulo{
+      justify-self: center;
+      align-self: center;
+      font-family: 'Irish Grover', sans-serif;
+      color: #ffffff;
+      font-size: 2.5vw;
+
+    }
+
+    & figure{
+      display: grid;
+      grid-template: 10vh 47vh 23vh/ auto;
+
+      & h3{
+        font-family: 'Irish Grover', sans-serif;
+        font-size: 3vw;
+        text-decoration: underline;
+        text-align: center;
+      }
+      & img{
+        justify-self: center;
+        width: 80vw;
+        height: 47vh;
+      }
+
+      & figcaption{
+        font-family: 'Chewy', sans-serif;
+        padding: 20px;
+        justify-self: center;
+        width: 80vw;
+        border-radius: 20px;
+        background-color: #0A031A;
+        text-align: left;
+        font-size: 2vw;
+        color: #ffffff;
+      }
+    }
+    
   }
+} 
+
+.conteudo {
+  justify-self: center;
+  display: flex;
+  overflow-x: auto;
+  padding: 20px;
+  gap: 20px;
+  height: 40vh;
+  width: 90vw;
+  border: 1px solid #ccc;
+  background-color:rgba(217, 217, 217, 0.6);
+  border-radius: 40px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.cartao {
+  border-radius: 50px;
+  background-color: rgba(217, 217, 217, 0.6);
+  padding: 10px;
+  min-width: 150px;
+  text-align: center;
+  border-radius: 5px;
+  cursor: grab;
+  user-select: none;
+  position: relative;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.cartao img {
+  width: 15vw;
+  border-radius: 5px;
+}
+
+.cartao .info {
+  display: none;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #ffffff;
+  font-size: 1vw;
+  padding: 10px;
+  border-radius: 5px;
+  width: 90%;
+  text-align: left;
+  z-index: 1;
+}
+
+.cartao:hover .info {
+  display: block;
+}
+
+.cartao:active {
+  cursor: grabbing;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------- */
+
+@media screen and (max-width:480px) {
+  body {
+
+    & main{
+      grid-template: 20vh 80vh 60vh / auto;
   
-  .cartao {
-    background-color: #16e07b;
-    padding: 10px;
-    min-width: 150px;
-    text-align: center;
-    border-radius: 5px;
-    cursor: grab;
-    user-select: none;
-    position: relative;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
-  }
+      & .titulo{
+        font-size: 3vw;
+      }
+  
+      & figure{
+        grid-template: 10vh 20vh 23vh/ auto;
+  
+        & h3{
+          font-size: 4vw;
+        }
+        & img{
+          width: 80vw;
+          height: 20vh;
+        }
+  
+        & figcaption{
+          width: 80vw;
+          border-radius: 20px;
+          background-color: #0A031A;
+          text-align: left;
+          font-size: 3vw;
+          color: #ffffff;
+        }
+      }
+      
+    }
+  } 
   
   .cartao img {
-    width: 100%;
-    border-radius: 5px;
+    width: 30vw;
   }
   
   .cartao .info {
-    display: none;
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: rgba(0, 0, 0, 0.7);
-    color: #ffffff;
-    font-size: 0.8vw;
-    padding: 10px;
-    border-radius: 5px;
-    width: 90%;
-    text-align: left;
-    z-index: 1;
+    font-size: 2.3vw;
+  }
+}
+
+/* ---------------------------------------------------------------------------------------------------------------- */
+
+@media screen and (max-width:768px) and (min-width:481px){
+  .cartao img {
+    width: 20vw;
   }
   
-  .cartao:hover .info {
-    display: block;
+  .cartao .info {
+    font-size: 1.5vw;
   }
-  
-  .cartao:active {
-    cursor: grabbing;
-  }
-  
+}
