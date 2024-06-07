@@ -278,6 +278,11 @@
       }
     }
 
+    & .btn-cadastrar{
+      align-self: center;
+      justify-self: center;
+    }
+
     & #cadastroUser{
       align-self: center;
       justify-self: center;
@@ -295,7 +300,9 @@
 
       & fieldset{
         display: grid;
+        grid-template: 130vh 25vh / auto;
         border: none;
+
       }
 
       & .forms{
@@ -303,7 +310,7 @@
         grid-template: 10vh 10vh 10vh 10vh 10vh 10vh 10vh 30vh/ auto;
         background-color: rgba(217, 217, 217, 0.6);
         border-radius: 50px;
-        margin-left: 5vw;
+        margin-left: 8vw;
         width: 40vw;
         padding: 30px;
         gap: 30px;
@@ -336,7 +343,7 @@
           grid-template: 10vh 10vh 10vh 10vh 10vh 0vh 60vh/ auto;
           background-color: rgba(217, 217, 217, 0.6);
           border-radius: 50px;
-          margin-left: 5vw;
+          margin-left: 8vw;
           width: 40vw;
           padding: 30px;
           gap: 30px;
@@ -362,7 +369,7 @@
 
       & fieldset{
         display: grid;
-        grid-template: 180vh 10vh / auto;
+        grid-template: 200vh 10vh / auto;
         border: none;
     
         & .forms{
