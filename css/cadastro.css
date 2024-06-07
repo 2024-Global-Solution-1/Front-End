@@ -50,6 +50,7 @@
 
       & h3{
         font-family: 'Irish Grover', sans-serif;
+        font-size: 30px;
         align-self: center;
         text-align: center;
       }
@@ -59,7 +60,7 @@
         justify-self: center;
         display: flex;
         width: 20vw;
-        height: 10vh;
+        height: auto;
         padding: 30px;
         background-color: rgba(0, 73, 103, 1);
         border: 2px solid black;
@@ -74,9 +75,7 @@
           padding: 10px;
           background-color: rgba(0, 178, 179, 1);
           border: 2px solid black;
-          border-radius: 55px;
-          
-          
+          border-radius: 55px; 
           
           & a{
             text-decoration: none;
@@ -346,6 +345,47 @@
       }
     }
 
+    & #cadastroOng{
+      align-self: center;
+      justify-self: center;
+      width: 60vw;
+      height: 100vh;
+      border-radius: 39px;
+      background-color: rgba(217, 217, 217, 0.7);
+
+      & h3{
+        font-family: 'Irish Grover', sans-serif;
+        font-size: 50px;
+        color: #fff;
+        text-align: center;
+      }
+
+      & fieldset{
+        display: grid;
+        grid-template: 180vh 10vh / auto;
+        border: none;
+    
+        & .forms{
+          display: grid;
+          grid-template: 10vh 10vh 10vh 10vh 10vh 10vh 10vh 20vh 20vh 20vh 20vh/ auto;
+          background-color: rgba(217, 217, 217, 0.6);
+          border-radius: 50px;
+          margin-left: 5vw;
+          width: 40vw;
+          padding: 30px;
+          gap: 30px;
+
+          & #identificacao{
+            display: grid;
+            gap: 5vw;
+            grid-template: auto / 20vw 15vw;
+            
+          }
+  
+        }
+      }
+    }
+
     & .nome{
       display: grid;
       grid-template: 30px 40px 20px / auto;
@@ -404,9 +444,28 @@
       }
     }
 
-    & .website-empresa{
+    & .website{
       display: grid;
       grid-template: 30px 40px / auto;
+      margin-left: 3vw;
+    }
+
+    & .data{
+      display: grid;
+      grid-template: 30px 40px 20px / auto;
+      margin-left: 3vw;
+    }
+
+    & .sigla{
+      display: grid;
+      width: 5vw;
+      height: 4vh;
+      align-self: center;
+    }
+
+    & .descricao{
+      display: grid;
+      grid-template: 30px 100px 20px / auto;
       margin-left: 3vw;
     }
   }
@@ -447,7 +506,7 @@ input[type=number]::-webkit-inner-spin-button {
       }
 
       & label{
-        margin-left: 20px;
+        margin-left: 10px;
         font-family: 'Irish Grover', sans-serif;
         font-size: 20px;
       }
@@ -480,6 +539,7 @@ input[type=number]::-webkit-inner-spin-button {
         height: 55vh;
         border-radius: 39px;
         background-color: rgba(217, 217, 217, 0.7);
+        flex-direction: column;
   
         & h3{
           font-family: 'Irish Grover', sans-serif;
@@ -522,6 +582,70 @@ input[type=number]::-webkit-inner-spin-button {
           }
         }
       }
+      & .redes-socias{
+        display: grid;
+        grid-template: 50px;
+        flex-direction: column;
+  
+        & .redesSS{
+          display: flex;
+          column-gap: 50px;
+          flex-direction: column;
+  
+          & input{
+            height: 4vh;
+          }
+        }
+      }
+      & #cadastroUser{
+        & .forms{
+          grid-template: 10vh 10vh 10vh 10vh 10vh 10vh 10vh 40vh/ auto;
+        }
+      }
+
+      & #cadastroOng{
+  
+        & h3{
+          font-family: 'Irish Grover', sans-serif;
+          font-size: 50px;
+          color: #fff;
+          text-align: center;
+        }
+  
+        & fieldset{
+          grid-template: 285vh 10vh / auto;
+      
+          & .forms{
+            grid-template: 20vh 15vh 15vh 15vh 15vh 15vh 15vh 45vh 25vh 25vh 25vh/ auto;
+
+            & #identificacao{
+              display: grid;
+              grid-template: 10vh 15vh / auto;
+            }
+    
+          }
+        }
+      }
+
+      & .redes-socias{
+        display: grid;
+        grid-template: 50px;
+        flex-direction: column;
+  
+        & .redesSS{
+          display: flex;
+          column-gap: 50px;
+          flex-direction: column;
+  
+          & input{
+            height: 4vh;
+          }
+        }
+      }
+
+      & .descricao{
+        grid-template: 45px 100px 60px / auto;
+      }
 
     }
   }
@@ -548,6 +672,51 @@ input[type=number]::-webkit-inner-spin-button {
           height: 5vh;
           padding: 30px;
           font-size: 20px;
+        }
+      }
+
+      & #cadastroOng{
+  
+        & h3{
+          font-family: 'Irish Grover', sans-serif;
+          font-size: 50px;
+          color: #fff;
+          text-align: center;
+        }
+  
+        & fieldset{
+          grid-template: 285vh 10vh / auto;
+      
+          & .forms{
+            grid-template: 20vh 15vh 15vh 15vh 15vh 15vh 15vh 55vh 25vh 25vh 25vh/ auto;
+
+            & #identificacao{
+              display: grid;
+              grid-template: 10vh 15vh / auto;
+            }
+    
+          }
+        }
+      }
+
+      & .redes-socias{
+  
+        & .redesSS{
+          display: flex;
+          column-gap: 60px;
+          flex-direction: column;
+  
+          & input{
+            display: flex;
+            height: 5vh;
+          }
+        }
+      }
+
+      & #cadastroEmpresa{
+  
+        & fieldset{
+          grid-template: 125vh 20vh / auto;
         }
       }
     }
@@ -577,6 +746,60 @@ input[type=number]::-webkit-inner-spin-button {
           font-size: 20px;
         }
       }
+
+      & #cadastroOng{
+  
+        & h3{
+          font-family: 'Irish Grover', sans-serif;
+          font-size: 50px;
+          color: #fff;
+          text-align: center;
+        }
+  
+        & fieldset{
+          grid-template: 285vh 10vh / auto;
+      
+          & .forms{
+            grid-template: 25vh 15vh 15vh 15vh 15vh 15vh 15vh 55vh 25vh 25vh 25vh/ auto;
+
+            & #identificacao{
+              display: grid;
+              grid-template: 10vh 10vh / auto;
+            }
+
+            & .sigla{
+              margin-left: 3vw;
+              display: grid;
+              width: 35vw;
+              height: 4vh;
+              align-self: center;
+            }
+    
+          }
+        }
+      }
+
+      & .redes-socias{
+  
+        & .redesSS{
+          display: flex;
+          column-gap: 60px;
+          flex-direction: column;
+  
+          & input{
+            display: flex;
+            height: 5vh;
+          }
+        }
+      }
+
+      & #cadastroEmpresa{
+  
+        & fieldset{
+          grid-template: 125vh 20vh / auto;
+        }
+      }
+
     }
   }
 }
