@@ -10,7 +10,7 @@
 </head>
 <body>
     <header>
-        <figure><img src="./imgs/padroes/logo.png" alt="logo-principal"></figure>
+        <figure><img src="../imgs/padroes/logo.png" alt="logo-principal"></figure>
         <nav>
             <ul>
                 <li><a href="../index.html">Home</a></li>
@@ -34,14 +34,20 @@
         <form action="#" method="get">
             <fielset>
                 <div class="denuncia">
-                    <label for="idDenuncia">Denuncie</label>
-                    <input type="text" name="txtDenuncia" idDenuncia="idDenuncia" placeholder="Descreva a denúncia" required="required" minlenght="15" class="grupo-input">
-
-                    <label for="idImagens">Adicione aqui imagens caso tenha</label>
-                    <input type="file" name="arqDenunciaImg" id="idImagem" accept="image/png, image/jpeg">
-
-                    <label for="idVideos">Adicione aqui videos caso tenha</label>
-                    <input type="file" name="arqDenunciaVid" id="idVideos" accept="video/*">
+                    <div class="denuncia2">
+                        <label for="idDenuncia">Denuncie</label>
+                        <input type="text" name="txtDenuncia" idDenuncia="idDenuncia" placeholder="Descreva a denúncia" required="required" minlenght="15" class="grupo-input">
+                    </div>
+                   
+                    <div class="img">
+                        <label for="idImagens">Adicione aqui imagens caso tenha</label>
+                        <input type="file" name="arqDenunciaImg" id="idImagem" accept="image/png, image/jpeg">
+                    </div>
+                    
+                    <div class="video">
+                        <label for="idVideos">Adicione aqui videos caso tenha</label>
+                        <input type="file" name="arqDenunciaVid" id="idVideos" accept="video/*">
+                    </div>
                 </div>
             </fielset>
         </form>
@@ -56,7 +62,7 @@
 
             <hr/>
             <div class="redes">
-            <a href="https://github.com/2024-Global-Solution-1"><figure><img src="./imgs/padroes/github-logo.png" alt="github-logo"></figure></a>
+            <a href="https://github.com/2024-Global-Solution-1"><figure><img src="../imgs/padroes/github-logo.png" alt="github-logo"></figure></a>
             <figure><img src="../imgs/padroes/instagram-logo.png" alt="insta-logo"></figure>
             <figure><img src="../imgs/padroes/facebook-logo.png" alt="face-logo"></figure>
             </div>
