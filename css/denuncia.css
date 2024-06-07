@@ -82,3 +82,115 @@
     }
   }
 }
+
+/* ------------------------------------------------------------------------------------------------------------- */
+
+@media screen and (max-width:480px) {
+  & body{  
+    & main{
+      grid-template: 40vh 70vh / auto;
+      & h3{
+          font-size: 25px;
+      }
+  
+      & form{
+        & fielset{
+          & .denuncia{
+              grid-template: 20vw 15vw 15vw / auto;
+              gap: 20px;
+
+              & .denuncia2{
+                  font-size: 40px;
+                  grid-template: 10vw 10vw / auto;
+                  gap: 20px;
+
+                  & input{
+                      border-radius: 32px;
+                  }
+              }
+
+              & .img{
+                  font-size: 15px;
+                  grid-template: 5vw 5vw / auto;
+                  gap: 20px;
+              }
+
+              & .video{
+                  font-size: 15px;
+                  grid-template: 5vw 5vw / auto;
+                  gap: 20px;
+
+              }
+            }
+          }
+      }
+    }
+  }
+}
+
+/* ---------------------------------------------------------------------------------------------------------------- */
+
+@media screen and (max-width:768px) and (min-width:481px){
+  & body{  
+    & main{
+      grid-template: 40vh 70vh / auto;
+      & form{
+        & fielset{
+          & .denuncia{
+              grid-template: 20vw 10vw 10vw / auto;
+              gap: 20px;
+
+              & .denuncia2{
+                  font-size: 40px;
+                  grid-template: 10vw 10vw / auto;
+                  gap: 20px;
+
+                  & input{
+                      border-radius: 32px;
+                  }
+              }
+
+              & .img{
+                  font-size: 15px;
+                  grid-template: 5vw 5vw / auto;
+                  gap: 10px;
+              }
+
+              & .video{
+                  font-size: 15px;
+                  grid-template: 5vw 5vw / auto;
+                  gap: 10px;
+
+              }
+            }
+          }
+      }
+    }
+  }
+}
+
+/* ---------------------------------------------------------------------------------------------------------------- */
+
+@media screen and (max-width:1024px) and (min-width:769px){
+  & body{  
+    & main{
+      grid-template: 40vh 90vh / auto;
+      & form{
+        & fielset{
+          & .denuncia{
+            grid-template: 20vw 10vw 10vw / auto;
+            gap: 20px;
+
+            & .img{
+              font-size: 20px;
+            }
+
+            & .video{
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
