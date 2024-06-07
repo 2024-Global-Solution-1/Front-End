@@ -251,7 +251,7 @@
           display: grid;
           grid-template: auto / 10vw 10vw 10vw;
           gap: 40px;
-
+          
           & a{
             justify-self: center;
             text-align: center;
@@ -445,6 +445,84 @@ input[type=number]::-webkit-inner-spin-button {
           font-size: 20px;
         }
       }
+
+      & label{
+        margin-left: 20px;
+        font-family: 'Irish Grover', sans-serif;
+        font-size: 20px;
+      }
+  
+      & input{
+        width: 30vw;
+        border: 5px solid rgba(0, 73, 103, 1);
+        border-radius: 10px;
+      }
+  
+      & button[type=submit]{
+        border: 1px solid white;
+        border-radius: 30px;
+        padding: 10px;
+        width: 20vw;
+        color: rgba(72, 200, 255, 1);
+        background-color: rgba(0, 73, 103, 1);
+        font-size: 20px;
+        font-family: 'Chewy', sans-serif;
+      }
+  
+      & .Co{
+        font-size: 15px;
+      }
+
+      & #tipoCadastro{
+        align-self: center;
+        justify-self: center;
+        width: 60vw;
+        height: 55vh;
+        border-radius: 39px;
+        background-color: rgba(217, 217, 217, 0.7);
+  
+        & h3{
+          font-family: 'Irish Grover', sans-serif;
+          font-size: 40px;
+          color: #fff;
+          text-align: center;
+        }
+        
+        & #opcoes{
+  
+          & #a3btn{
+            display: flex;
+            justify-self: center;
+            align-self: center;
+            display: grid;
+            grid-template: auto / 10vw 10vw 10vw;
+            gap: 40px;
+            flex-wrap: wrap;
+  
+            & a{
+              display: flex;
+              justify-self: center;
+              text-align: center;
+              text-decoration: none;
+              margin-right: 60vw;
+              font-size: 15px;
+              width: 9vw;
+              padding: 10px;
+              font-family: 'Chewy', sans-serif;
+              flex-wrap: wrap;
+            }
+          }
+  
+          & p{
+            align-self: center;
+            width: max-content;
+            font-size: 24px;
+            font-family: 'Chewy', sans-serif;
+            color: #000;
+          }
+        }
+      }
+
     }
   }
 }
