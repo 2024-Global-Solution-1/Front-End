@@ -9,7 +9,6 @@
   
 & body{
   width: auto;
-  height: 1368px;
   background: linear-gradient(0deg, rgba(10,3,26,0.95) 53%, rgba(0,0,62,0.95) 100%);
 
   & header{
@@ -116,6 +115,32 @@
       }
     }
 
+    & label{
+      margin-left: 20px;
+      font-family: 'Irish Grover', sans-serif;
+      font-size: 20px;
+    }
+
+    & input{
+      border: 5px solid rgba(0, 73, 103, 1);
+      border-radius: 10px;
+    }
+
+    & button[type=submit]{
+      border: 1px solid white;
+      border-radius: 30px;
+      padding: 10px;
+      width: 10vw;
+      color: rgba(72, 200, 255, 1);
+      background-color: rgba(0, 73, 103, 1);
+      font-size: 20px;
+      font-family: 'Chewy', sans-serif;
+    }
+
+    & .Co{
+      font-size: 15px;
+    }
+
     & .div-btn-fechar{
       display: flex;
       margin-right: 30px;
@@ -133,17 +158,6 @@
       margin-left: 5vw;
     }
 
-    & button[type=submit]{
-      border: 1px solid white;
-      border-radius: 30px;
-      padding: 10px;
-      width: 10vw;
-      color: rgba(72, 200, 255, 1);
-      background-color: rgba(0, 73, 103, 1);
-      font-size: 20px;
-      font-family: 'Chewy', sans-serif;
-    }
-
     &  #login{
       align-self: center;
       justify-self: center;
@@ -159,17 +173,6 @@
         text-align: center;
       }
 
-      & label{
-        margin-left: 20px;
-        font-family: 'Irish Grover', sans-serif;
-        font-size: 20px;
-      }
-
-      & input{
-        border: 5px solid rgba(0, 73, 103, 1);
-        border-radius: 10px;
-      }
-
       & fieldset{
         display: grid;
         grid-template: 60vh 10vh / auto;
@@ -177,7 +180,7 @@
 
         & .forms{
           display: grid;
-          grid-template: 20vh 10vh 10vh 5vh / auto;
+          grid-template: 20vh 10vh 10vh 10vh / auto;
           background-color: rgba(217, 217, 217, 0.6);
           border-radius: 50px;
           margin-left: 5vw;
@@ -217,6 +220,195 @@
       }
       
     }
+
+    & #tipoCadastro{
+      align-self: center;
+      justify-self: center;
+      width: 60vw;
+      height: 55vh;
+      border-radius: 39px;
+      background-color: rgba(217, 217, 217, 0.7);
+
+      & h3{
+        font-family: 'Irish Grover', sans-serif;
+        font-size: 50px;
+        color: #fff;
+        text-align: center;
+      }
+      
+      & #opcoes{
+        display: grid;
+        grid-template: 10vh 20vh / auto;
+        background-color: rgba(217, 217, 217, 0.6);
+        border-radius: 50px;
+        margin-left: 8vw;
+        width: 45vw;
+        gap: 20px;
+
+        & #a3btn{
+          justify-self: center;
+          align-self: center;
+          display: grid;
+          grid-template: auto / 10vw 10vw 10vw;
+          gap: 40px;
+          
+          & a{
+            justify-self: center;
+            text-align: center;
+            text-decoration: none;
+            background-color: rgba(0, 73, 103, 1);
+            width: max-content;
+            color: rgba(72, 200, 255, 1);
+            font-size: 32px;
+            border: 3px solid black;
+            border-radius: 30px;
+            width: 9vw;
+            padding: 13px;
+            font-family: 'Chewy', sans-serif;
+            flex-wrap: wrap;
+          }
+        }
+
+        & p{
+          align-self: center;
+          width: max-content;
+          font-size: 24px;
+          font-family: 'Chewy', sans-serif;
+          color: #000;
+        }
+      }
+    }
+
+    & #cadastroUser{
+      align-self: center;
+      justify-self: center;
+      width: 60vw;
+      height: 100vh;
+      border-radius: 39px;
+      background-color: rgba(217, 217, 217, 0.7);
+
+      & h3{
+        font-family: 'Irish Grover', sans-serif;
+        font-size: 50px;
+        color: #fff;
+        text-align: center;
+      }
+
+      & fieldset{
+        display: grid;
+        border: none;
+      }
+
+      & .forms{
+        display: grid;
+        grid-template: 10vh 10vh 10vh 10vh 10vh 10vh 10vh 30vh/ auto;
+        background-color: rgba(217, 217, 217, 0.6);
+        border-radius: 50px;
+        margin-left: 5vw;
+        width: 40vw;
+        padding: 30px;
+        gap: 30px;
+
+      }
+    }
+
+    & #cadastroEmpresa{
+      align-self: center;
+      justify-self: center;
+      width: 60vw;
+      height: 100vh;
+      border-radius: 39px;
+      background-color: rgba(217, 217, 217, 0.7);
+
+      & h3{
+        font-family: 'Irish Grover', sans-serif;
+        font-size: 50px;
+        color: #fff;
+        text-align: center;
+      }
+
+      & fieldset{
+        display: grid;
+        grid-template: 120vh 30vh / auto;
+        border: none;
+    
+        & .forms{
+          display: grid;
+          grid-template: 10vh 10vh 10vh 10vh 10vh 0vh 60vh/ auto;
+          background-color: rgba(217, 217, 217, 0.6);
+          border-radius: 50px;
+          margin-left: 5vw;
+          width: 40vw;
+          padding: 30px;
+          gap: 30px;
+  
+        }
+      }
+    }
+
+    & .nome{
+      display: grid;
+      grid-template: 30px 40px 20px / auto;
+      margin-left: 3vw;
+    }
+
+    & .user-name{
+      display: grid;
+      grid-template: 30px 40px / auto;
+      margin-left: 3vw;
+    }
+
+    & .idade{
+      display: grid;
+      grid-template: 30px 40px / auto;
+      margin-left: 3vw;
+    }
+
+    & .endereco{
+      display: grid;
+      grid-template: 30px 40px / auto;
+      margin-left: 3vw;
+    }
+
+    & .Email{
+      display: grid;
+      grid-template: 30px 40px 20px / auto;
+      margin-left: 3vw;
+    }
+
+    & .Senha{
+      display: grid;
+      grid-template: 30px 40px 20px / auto;
+      margin-left: 3vw;
+    }
+
+    & .telefone{
+      display: grid;
+      grid-template: 30px 40px / auto;
+      margin-left: 3vw;
+    }
+
+    & .redes-socias{
+      display: grid;
+      grid-template: 50px 100px / auto;
+      margin-left: 3vw;
+
+      & .redesSS{
+        display: grid;
+        grid-template: 6vw 6vw / 15vw 15vw;
+        column-gap: 50px;
+
+        & input{
+          height: 4vh;
+        }
+      }
+    }
+
+    & .website-empresa{
+      display: grid;
+      grid-template: 30px 40px / auto;
+      margin-left: 3vw;
+    }
   }
 }
 
@@ -253,6 +445,84 @@ input[type=number]::-webkit-inner-spin-button {
           font-size: 20px;
         }
       }
+
+      & label{
+        margin-left: 20px;
+        font-family: 'Irish Grover', sans-serif;
+        font-size: 20px;
+      }
+  
+      & input{
+        width: 30vw;
+        border: 5px solid rgba(0, 73, 103, 1);
+        border-radius: 10px;
+      }
+  
+      & button[type=submit]{
+        border: 1px solid white;
+        border-radius: 30px;
+        padding: 10px;
+        width: 20vw;
+        color: rgba(72, 200, 255, 1);
+        background-color: rgba(0, 73, 103, 1);
+        font-size: 20px;
+        font-family: 'Chewy', sans-serif;
+      }
+  
+      & .Co{
+        font-size: 15px;
+      }
+
+      & #tipoCadastro{
+        align-self: center;
+        justify-self: center;
+        width: 60vw;
+        height: 55vh;
+        border-radius: 39px;
+        background-color: rgba(217, 217, 217, 0.7);
+  
+        & h3{
+          font-family: 'Irish Grover', sans-serif;
+          font-size: 40px;
+          color: #fff;
+          text-align: center;
+        }
+        
+        & #opcoes{
+  
+          & #a3btn{
+            display: flex;
+            justify-self: center;
+            align-self: center;
+            display: grid;
+            grid-template: auto / 10vw 10vw 10vw;
+            gap: 40px;
+            flex-wrap: wrap;
+  
+            & a{
+              display: flex;
+              justify-self: center;
+              text-align: center;
+              text-decoration: none;
+              margin-right: 60vw;
+              font-size: 15px;
+              width: 9vw;
+              padding: 10px;
+              font-family: 'Chewy', sans-serif;
+              flex-wrap: wrap;
+            }
+          }
+  
+          & p{
+            align-self: center;
+            width: max-content;
+            font-size: 24px;
+            font-family: 'Chewy', sans-serif;
+            color: #000;
+          }
+        }
+      }
+
     }
   }
 }

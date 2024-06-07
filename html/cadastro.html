@@ -80,7 +80,7 @@
             <h3>Tipo Cadastro</h3>
             <div id="opcoes">
                 <p>Escolha o tipo de cadastro que se encaixa na sua situação</p>
-                <div id="3btn">
+                <div id="a3btn">
                     <a href="#" id="btn1">Empresa</a>
                     <a href="#" id="btn2">Ong</a>
                     <a href="#" id="btn3">User</a>
@@ -94,10 +94,10 @@
             <form action="#" method="get">
                 <fieldset>
                     <div class="forms">
-                        <div class="nome-completo">
+                        <div class="nome">
                             <label for="idNome">Nome Completo</label>
                             <input type="text" name="txtNomeCompl" id="idNomeCompl" placeholder="Insira seu Nome Completo" required="required" minlength="3" class="grupo-input">
-                            <label for="CampoNmCompl">*Campo Obrigatório</label>
+                            <label class="Co" for="CampoNmCompl">*Campo Obrigatório</label>
                         </div>
 
                         <div class="user-name">
@@ -116,15 +116,15 @@
                         </div>
 
                         <div class="Email">
-                            <label for="idEmail">Nome Completo</label>
+                            <label for="idEmail">Email</label>
                             <input type="email" name="txtEmail" id="idEmail" placeholder="Insira seu Email" required="required" minlength="7" class="grupo-input">
-                            <label for="CampoEmail">Campo Obrigatório</label>
+                            <label class="Co" for="CampoEmail">Campo Obrigatório</label>
                         </div>
 
                         <div class="Senha">
                             <label for="idSenha">Senha</label>
                             <input type="password" name="txtSenha" id="idSenha" placeholder="Insira sua Senha" required="required" minlength="5" class="grupo-input">
-                            <label for="CampoSenha">*Campo Obrigatório</label>
+                            <label class="Co" for="CampoSenha">*Campo Obrigatório</label>
                         </div>
 
                         <div class="telefone">
@@ -135,24 +135,26 @@
                         <div class="redes-socias">
                             <label for="idRedes">Redes Sociais</label>
 
-                            <div class="facebook">
-                                <label for="idFace">Facebook</label>
-                                <input type="text" name="txtFacebook" id="idFacebook" placeholder="Facebook" class="grupo-input">
-                            </div>
-
-                            <div class="instagram">
-                                <label for="idInsta">Instagram</label>
-                                <input type="text" name="txtInstagram" id="idInstagram" placeholder="Instagram" class="grupo-input">
-                            </div>
-
-                            <div class="Youtube">
-                                <label for="idYou">Youtube</label>
-                                <input type="text" name="txtYoutube" id="idYoutube" placeholder="Youtube" class="grupo-input">
-                            </div>
-
-                            <div class="Twitter">
-                                <label for="idX">Twitter</label>
-                                <input type="text" name="txtX" id="idX" placeholder="Twitter" class="grupo-input">
+                            <div class="redesSS">
+                                <div class="facebook">
+                                    <label for="idFace">Facebook</label>
+                                    <input type="text" name="txtFacebook" id="idFacebook" placeholder="Facebook" class="grupo-input">
+                                </div>
+    
+                                <div class="instagram">
+                                    <label for="idInsta">Instagram</label>
+                                    <input type="text" name="txtInstagram" id="idInstagram" placeholder="Instagram" class="grupo-input">
+                                </div>
+    
+                                <div class="Youtube">
+                                    <label for="idYou">Youtube</label>
+                                    <input type="text" name="txtYoutube" id="idYoutube" placeholder="Youtube" class="grupo-input">
+                                </div>
+    
+                                <div class="Twitter">
+                                    <label for="idX">Twitter</label>
+                                    <input type="text" name="txtX" id="idX" placeholder="Twitter" class="grupo-input">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -169,21 +171,21 @@
             <form action="#" method="get">
                 <fieldset>
                     <div class="forms">
-                        <div class="nome-empresa">
+                        <div class="nome">
                             <label for="idNomeEmpresa">Nome da Empresa</label>
                             <input type="text" name="txtNomeEmpresa" id="idNomeEmpresa" placeholder="Insira o nome da empresa" required="required" minlength="5" class="grupo-input">
-                            <label for="CampoNmEmpresa">*Campo Obrigatório</label>
+                            <label class="Co" for="CampoNmEmpresa">*Campo Obrigatório</label>
                         </div>
 
-                        <div class="enderecoEmpresa">
+                        <div class="endereco">
                             <label for="idEnderecoEmpre">Endereço</label>
                             <input type="text" name="txtEnderecoEmpresa" id="idEnderecoEmpresa" placeholder="Insira o endereço da empresa"  minlength="10" class="grupo-input">
                         </div>
 
-                        <div class="email-empresa">
+                        <div class="Email">
                             <label for="idEmailEmpresa">Email de Contato</label>
                             <input type="email" name="txtEmailEmpresa" id="idEmailEmpresa" placeholder="Insira o email de contato da empresa" required="required" minlength="7" class="grupo-input">
-                            <label for="CampoEmailEmpresa">*Campo Obrigatório</label>
+                            <label class="Co" for="CampoEmailEmpresa">*Campo Obrigatório</label>
                         </div>
 
                         <div class="website-empresa">
@@ -191,41 +193,36 @@
                             <input type="url" name="txtWebsiteEmpresa" id="idWebEmpresa" placeholder="Insira o Url do website da empresa" minlength="10" class="grupo-input">
                         </div>
 
-                        <div class="telefone-empresa">
+                        <div class="telefone">
                             <label for="idTelefoneEmpresa">Telefone</label>
                             <input type="tel" name="txtTelefoneEmpresa" id="idTelefoneEmpresa" placeholder="Insira Telefone da Empresa"  minlength="11" class="grupo-input">
                         </div>
                         
-                        <div class="redes-socias-empresa">
-                            <label for="idRedesEmpresa">Redes Sociais</label>
+                        <div class="redes-socias">
+                            <label for="idRedes">Redes Sociais</label>
 
-                            <div class="facebook-empresa">
-                                <label for="idFaceEmpresa">Facebook</label>
-                                <input type="text" name="txtFacebookEmpresa" id="idFacebookEmpresa" placeholder="Facebook" class="grupo-input">
-                            </div>
-
-                            <div class="instagram-empresa">
-                                <label for="idInstaEmpresa">Instagram</label>
-                                <input type="text" name="txtInstagramEmpresa" id="idInstagramEmpresa" placeholder="Instagram" class="grupo-input">
-                            </div>
-
-                            <div class="Youtube-empresa">
-                                <label for="idYouEmpresa">Youtube</label>
-                                <input type="text" name="txtYoutubeEmpresa" id="idYoutubeEmpresa" placeholder="Youtube" class="grupo-input">
-                            </div>
-
-                            <div class="Twitter">
-                                <label for="idXEmpresa">Twitter</label>
-                                <input type="text" name="txtXEmpresa" id="idXEmpresa" placeholder="Twitter" class="grupo-input">
+                            <div class="redesSS">
+                                <div class="facebook">
+                                    <label for="idFace">Facebook</label>
+                                    <input type="text" name="txtFacebook" id="idFacebook" placeholder="Facebook" class="grupo-input">
+                                </div>
+    
+                                <div class="instagram">
+                                    <label for="idInsta">Instagram</label>
+                                    <input type="text" name="txtInstagram" id="idInstagram" placeholder="Instagram" class="grupo-input">
+                                </div>
+    
+                                <div class="Youtube">
+                                    <label for="idYou">Youtube</label>
+                                    <input type="text" name="txtYoutube" id="idYoutube" placeholder="Youtube" class="grupo-input">
+                                </div>
+    
+                                <div class="Twitter">
+                                    <label for="idX">Twitter</label>
+                                    <input type="text" name="txtX" id="idX" placeholder="Twitter" class="grupo-input">
+                                </div>
                             </div>
                         </div>
-
-                        <div class="descricao">
-                            <label for="idDescricao">Descrição da empresa</label>
-                            <input type="text" name="txtdescricao" id="idDescricao" placeholder="Escreva aqui a descrição sobre sua empresa..." class="grupo-input" required>
-                            <label for="Descricao">*Campo Obrigatório</label>
-                        </div>
-
 
                     </div>
                     <div id="btn-cadastrar">
