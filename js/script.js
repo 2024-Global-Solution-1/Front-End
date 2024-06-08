@@ -21,14 +21,3 @@ function spanValor(valor, idMedida, number){
 
     }
 }
-
-const kmVeiculo = document.getElementById('kmVeiculo');
-const questionElement = document.getElementById('question');
-const trueButton = document.getElementById('true-btn');
-const falseButton = document.getElementById('false-btn');
-const resultContainer = document.getElementById('result-container');
-const resultElement = document.getElementById('result');
-const playAgainButton = document.getElementById('play-again-btn');
-const gameTitle = document.getElementById('game-title');
-
-//AAAAAAAAAAAAAAAAA
