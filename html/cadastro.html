@@ -1,382 +1,673 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="../imgs/padroes/logo.png">
-    <link rel="stylesheet" href="../css/estilo-padrao.css">
-    <link rel="stylesheet" href="../css/cadastro.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../imgs/padroes/logo.png" />
+    <link rel="stylesheet" href="../css/estilo-padrao.css" />
+    <link rel="stylesheet" href="../css/cadastro.css" />
     <script src="../js/script.js" defer></script>
     <title>Cadastro</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <figure><img src="../imgs/padroes/logo.png" alt="logo-principal"></figure>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="./informacoes.html">Info</a></li>
-                <li><a href="./sobre.html">Quem Somos</a></li>
-                <li><a href="./ongs.html">Ongs</a></li>
-                <li><a href="./pegada-carbono.html">Pegada Carbono</a></li>
-            </ul>
-        </nav>
-        <label class="burger" for="burger">
-            <input type="checkbox" id="burger">
-            <span></span>
-            <span></span>
-            <span></span>
-            </label>
+      <figure>
+        <img src="../imgs/padroes/logo.png" alt="logo-principal" />
+      </figure>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="./informacoes.html">Info</a></li>
+          <li><a href="./sobre.html">Quem Somos</a></li>
+          <li><a href="./ongs.html">Ongs</a></li>
+          <li><a href="./pegada-carbono.html">Pegada Carbono</a></li>
+        </ul>
+      </nav>
+      <label class="burger" for="burger">
+        <input type="checkbox" id="burger" />
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
     </header>
 
     <main>
-        <h1>Cadastro/Login</h1>
-        <p>Aqui Você pode logar caso deseje, além de caso não possuir uma conta pode cria-la caso deseje</p>
-        <div id="primeira-pergunta">
-            <h3>O que a sua pessoa deseja fazer?</h3>
-            <div id="botoes">
-                <div id="logar"><a href="#">Login</a></div>
-                <div id="cadastrar"><a href="#">Cadastro</a></div>
-            </div>
+      <h1>Cadastro/Login</h1>
+      <p>
+        Aqui Você pode logar caso deseje, além de caso não possuir uma conta
+        pode cria-la caso deseje
+      </p>
+      <div id="primeira-pergunta">
+        <h3>O que a sua pessoa deseja fazer?</h3>
+        <div id="botoes">
+          <div id="logar"><a href="#">Login</a></div>
+          <div id="cadastrar"><a href="#">Cadastro</a></div>
         </div>
+      </div>
 
-        <dialog id="login">
-            <div class="div-btn-fechar">
-                <a href="#" class="botaozinho btn-fechar" id="btnFechar1">X</a>
+      <dialog id="login">
+        <div class="div-btn-fechar">
+          <a href="#" class="botaozinho btn-fechar" id="btnFechar1">X</a>
+        </div>
+        <h3>Login</h3>
+        <form action="#" method="get">
+          <fieldset>
+            <div class="forms">
+              <div class="id">
+                <label for="idId">Id</label>
+                <input
+                  type="number"
+                  name="numId"
+                  id="idId"
+                  placeholder="Digite seu Id"
+                  required="required"
+                  class="grupo-input"
+                />
+              </div>
+
+              <div class="email">
+                <label for="idEmail">Email</label>
+                <input
+                  type="email"
+                  name="txtEmail"
+                  id="idEmail"
+                  placeholder="Digite seu Email"
+                  required="required"
+                  minlength="7"
+                  class="grupo-input"
+                />
+              </div>
+
+              <div class="senha">
+                <label for="idSenha">Senha</label>
+                <input
+                  type="password"
+                  name="txtSenha"
+                  id="idSenha"
+                  placeholder="Digite sua senha"
+                  required="required"
+                  minlength="5"
+                  class="grupo-input"
+                />
+              </div>
+              <div class="checkbox">
+                <input
+                  type="checkbox"
+                  name="txtLembrar"
+                  id="idLembrar"
+                  value="lemebre"
+                  checked="checked"
+                /><label for="idLembrar">Lembrar-me</label>
+              </div>
+              <div id="btn-logar">
+                <button type="submit" class="grupo-input">Logar</button>
+              </div>
             </div>
-            <h3>Login</h3>
-            <form action="#" method="get">
-                <fieldset>
-                    <div class="forms">
-                        <div class="id">
-                            <label for="idId">Id</label>
-                            <input type="number" name="numId" id="idId" placeholder="Digite seu Id" required="required"  class="grupo-input">
-                        </div>
+          </fieldset>
+        </form>
+      </dialog>
 
-                        <div class="email">
-                            <label for="idEmail">Email</label>
-                            <input type="email" name="txtEmail" id="idEmail" placeholder="Digite seu Email" required="required" minlength="7" class="grupo-input">
-                        </div>
+      <dialog id="tipoCadastro">
+        <div class="div-btn-fechar">
+          <a href="#" class="botaozinho btn-fechar" id="btnFechar2">X</a>
+        </div>
+        <h3>Tipo Cadastro</h3>
+        <div id="opcoes">
+          <p>Escolha o tipo de cadastro que se encaixa na sua situação</p>
+          <div id="a3btn">
+            <a href="#" id="btn1">Empresa</a>
+            <a href="#" id="btn2">Ong</a>
+            <a href="#" id="btn3">User</a>
+          </div>
+        </div>
+      </dialog>
 
-                        <div class="senha">
-                            <label for="idSenha">Senha</label>
-                            <input type="password" name="txtSenha" id="idSenha" placeholder="Digite sua senha" required="required" minlength="5" class="grupo-input">
-                        </div>
-                        <div class="checkbox"><input type="checkbox" name="txtLembrar" id="idLembrar" value="lemebre" checked="checked"><label for="idLembrar">Lembrar-me</label>
-                        </div>
-                        <div id="btn-logar">
-                            <button type="submit" class="grupo-input">Logar</button>
-                        </div>
-                    </div>
-                   
-                </fieldset>
-            </form>
-        </dialog>
+      <dialog id="cadastroUser">
+        <div class="div-btn-fechar">
+          <a href="#" class="botaozinho btn-fechar" id="btnFechar3">X</a>
+        </div>
+        <h3>Cadastrar</h3>
+        <form
+          action="#"
+          method="get"
+          id="pessoa"
+          onsubmit="return cadastroRealizado(this.id)"
+        >
+          <fieldset>
+            <div class="forms">
+              <div class="nome">
+                <label for="idNome">Nome Completo</label>
+                <input
+                  type="text"
+                  name="txtNomeCompl"
+                  id="idNomeCompl"
+                  placeholder="Insira seu Nome Completo"
+                  required="required"
+                  class="grupo-input"
+                />
+                <label class="Co" for="CampoNmCompl">*Campo Obrigatório</label>
+              </div>
 
-        <dialog id="tipoCadastro">
-            <div class="div-btn-fechar">
-                <a href="#" class="botaozinho btn-fechar" id="btnFechar2">X</a>
-            </div>
-            <h3>Tipo Cadastro</h3>
-            <div id="opcoes">
-                <p>Escolha o tipo de cadastro que se encaixa na sua situação</p>
-                <div id="a3btn">
-                    <a href="#" id="btn1">Empresa</a>
-                    <a href="#" id="btn2">Ong</a>
-                    <a href="#" id="btn3">User</a>
+              <div class="user-name">
+                <label for="idUser">User-name</label>
+                <input
+                  type="text"
+                  name="txtUserName"
+                  id="idUser"
+                  placeholder="Insira um User Name"
+                  class="grupo-input"
+                />
+              </div>
+
+              <div class="idade">
+                <label for="idIdade">Idade</label>
+                <input
+                  type="number"
+                  name="txtIdade"
+                  id="idIdade"
+                  placeholder="Insira a sua idade"
+                  class="grupo-input"
+                />
+              </div>
+
+              <div class="endereco">
+                <label for="idendereco">Endereço</label>
+                <input
+                  type="text"
+                  name="txtEndereco"
+                  id="idEndereco"
+                  placeholder="Insira seu Endereço"
+                  minlength="10"
+                  class="grupo-input"
+                />
+              </div>
+
+              <div class="Email">
+                <label for="idEmail">Email</label>
+                <input
+                  type="email"
+                  name="txtEmail"
+                  placeholder="Insira seu Email"
+                  required="required"
+                  minlength="7"
+                  class="grupo-input"
+                />
+                <label class="Co" for="CampoEmail">Campo Obrigatório</label>
+              </div>
+
+              <div class="Senha">
+                <label for="idSenha">Senha</label>
+                <input
+                  type="password"
+                  name="txtSenha"
+                  placeholder="Insira sua Senha"
+                  required="required"
+                  minlength="5"
+                  class="grupo-input"
+                />
+                <label class="Co" for="CampoSenha">*Campo Obrigatório</label>
+              </div>
+
+              <div class="telefone">
+                <label for="idTelefone">Telefone</label>
+                <input
+                  type="tel"
+                  name="txtTelefone"
+                  id="idTelefone"
+                  placeholder="Insira Telefone"
+                  minlength="11"
+                  class="grupo-input"
+                />
+              </div>
+
+              <div class="redes-socias">
+                <label for="idRedes">Redes Sociais</label>
+
+                <div class="redesSS">
+                  <div class="facebook">
+                    <label for="idFace">Facebook</label>
+                    <input
+                      type="text"
+                      name="txtFacebook"
+                      id="idFacebook"
+                      placeholder="Facebook"
+                      class="grupo-input"
+                    />
+                  </div>
+
+                  <div class="instagram">
+                    <label for="idInsta">Instagram</label>
+                    <input
+                      type="text"
+                      name="txtInstagram"
+                      id="idInstagram"
+                      placeholder="Instagram"
+                      class="grupo-input"
+                    />
+                  </div>
+
+                  <div class="Youtube">
+                    <label for="idYou">Youtube</label>
+                    <input
+                      type="text"
+                      name="txtYoutube"
+                      id="idYoutube"
+                      placeholder="Youtube"
+                      class="grupo-input"
+                    />
+                  </div>
+
+                  <div class="Twitter">
+                    <label for="idX">Twitter</label>
+                    <input
+                      type="text"
+                      name="txtX"
+                      id="idX"
+                      placeholder="Twitter"
+                      class="grupo-input"
+                    />
+                  </div>
                 </div>
+              </div>
             </div>
-        </dialog>
-        
-        <dialog id="cadastroUser">
-            <div class="div-btn-fechar"><a href="#" class="botaozinho btn-fechar" id="btnFechar3">X</a></div>
-            <h3>Cadastrar</h3>
-            <form action="#" method="get" id="pessoa" onsubmit="return cadastroRealizado(this.id)">
-                <fieldset>
-                    <div class="forms">
-                        <div class="nome">
-                            <label for="idNome">Nome Completo</label>
-                            <input type="text" name="txtNomeCompl" id="idNomeCompl" placeholder="Insira seu Nome Completo" required="required" class="grupo-input">
-                            <label class="Co" for="CampoNmCompl">*Campo Obrigatório</label>
-                        </div>
-
-                        <div class="user-name">
-                            <label for="idUser">User-name</label>
-                            <input type="text" name="txtUserName" id="idUser" placeholder="Insira um User Name" class="grupo-input">
-                        </div>
-
-                        <div class="idade">
-                            <label for="idIdade">Idade</label>
-                            <input type="number" name="txtIdade" id="idIdade" placeholder="Insira a sua idade"   class="grupo-input">
-                        </div>
-
-                        <div class="endereco">
-                            <label for="idendereco">Endereço</label>
-                            <input type="text" name="txtEndereco" id="idEndereco" placeholder="Insira seu Endereço"  minlength="10" class="grupo-input">
-                        </div>
-
-                        <div class="Email">
-                            <label for="idEmail">Email</label>
-                            <input type="email" name="txtEmail" placeholder="Insira seu Email" required="required" minlength="7" class="grupo-input">
-                            <label class="Co" for="CampoEmail">Campo Obrigatório</label>
-                        </div>
-
-                        <div class="Senha">
-                            <label for="idSenha">Senha</label>
-                            <input type="password" name="txtSenha" placeholder="Insira sua Senha" required="required" minlength="5" class="grupo-input">
-                            <label class="Co" for="CampoSenha">*Campo Obrigatório</label>
-                        </div>
-
-                        <div class="telefone">
-                            <label for="idTelefone">Telefone</label>
-                            <input type="tel" name="txtTelefone" id="idTelefone" placeholder="Insira Telefone"  minlength="11" class="grupo-input">
-                        </div>
-
-                        <div class="redes-socias">
-                            <label for="idRedes">Redes Sociais</label>
-
-                            <div class="redesSS">
-                                <div class="facebook">
-                                    <label for="idFace">Facebook</label>
-                                    <input type="text" name="txtFacebook" id="idFacebook" placeholder="Facebook" class="grupo-input">
-                                </div>
-    
-                                <div class="instagram">
-                                    <label for="idInsta">Instagram</label>
-                                    <input type="text" name="txtInstagram" id="idInstagram" placeholder="Instagram" class="grupo-input">
-                                </div>
-    
-                                <div class="Youtube">
-                                    <label for="idYou">Youtube</label>
-                                    <input type="text" name="txtYoutube" id="idYoutube" placeholder="Youtube" class="grupo-input">
-                                </div>
-    
-                                <div class="Twitter">
-                                    <label for="idX">Twitter</label>
-                                    <input type="text" name="txtX" id="idX" placeholder="Twitter" class="grupo-input">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="btn-cadastrar">
-                        <button type="submit" class="grupo-input">Enviar</button>
-                    </div>
-                </fieldset>
-            </form>
-        </dialog>
-
-        <dialog id="cadastroEmpresa">
-            <div class="div-btn-fechar"><a href="#" class="botaozinho btn-fechar" id="btnFechar4">X</a></div>
-            <h3>Cadastrar</h3>
-            <form action="#" method="get" id="empresa" onsubmit="cadastroRealizado(this.id)">
-                <fieldset>
-                    <div class="forms">
-                        <div class="nome">
-                            <label for="idNomeEmpresa">Nome da Empresa</label>
-                            <input type="text" name="txtNomeEmpresa" id="idNomeEmpresa" placeholder="Insira o nome da empresa" required="required" minlength="5" class="grupo-input">
-                            <label class="Co" for="CampoNmEmpresa">*Campo Obrigatório</label>
-                        </div>
-
-                        <div class="endereco">
-                            <label for="idEnderecoEmpre">Endereço</label>
-                            <input type="text" name="txtEnderecoEmpresa" id="idEnderecoEmpresa" placeholder="Insira o endereço da empresa"  minlength="10" class="grupo-input">
-                        </div>
-
-                        <div class="Email">
-                            <label for="idEmailEmpresa">Email de Contato</label>
-                            <input type="email" name="txtEmailEmpresa" id="idEmailEmpresa" placeholder="Insira o email de contato da empresa" required="required" minlength="7" class="grupo-input">
-                            <label class="Co" for="CampoEmailEmpresa">*Campo Obrigatório</label>
-                        </div>
-
-                        <div class="website">
-                            <label for="idWebEmpresa">Website</label>
-                            <input type="url" name="txtWebsiteEmpresa" id="idWebEmpresa" placeholder="Insira o Url do website da empresa" minlength="10" class="grupo-input">
-                        </div>
-
-                        <div class="telefone">
-                            <label for="idTelefoneEmpresa">Telefone</label>
-                            <input type="tel" name="txtTelefoneEmpresa" id="idTelefoneEmpresa" placeholder="Insira Telefone da Empresa"  minlength="11" class="grupo-input">
-                        </div>
-                        
-                        <div class="redes-socias">
-                            <label for="idRedes">Redes Sociais</label>
-
-                            <div class="redesSS">
-                                <div class="facebook">
-                                    <label for="idFace">Facebook</label>
-                                    <input type="text" name="txtFacebook" placeholder="Facebook" class="grupo-input">
-                                </div>
-    
-                                <div class="instagram">
-                                    <label for="idInsta">Instagram</label>
-                                    <input type="text" name="txtInstagram" placeholder="Instagram" class="grupo-input">
-                                </div>
-    
-                                <div class="Youtube">
-                                    <label for="idYou">Youtube</label>
-                                    <input type="text" name="txtYoutube" placeholder="Youtube" class="grupo-input">
-                                </div>
-    
-                                <div class="Twitter">
-                                    <label for="idX">Twitter</label>
-                                    <input type="text" name="txtX" placeholder="Twitter" class="grupo-input">
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="btn-cadastrar">
-                        <button type="submit" class="grupo-input">Enviar</button>
-                    </div>
-                </fieldset>
-            </form>
-        </dialog>
-
-        <dialog id="cadastroOng">
-            <div class="div-btn-fechar"><a href="#" class="botaozinho btn-fechar" id="btnFechar5">X</a></div>
-            <h3>Cadastrar</h3>
-            <form action="#" method="get" id="ong" onsubmit="return cadastroRealizado(this.id)">
-                <fieldset>
-                    <div class="forms">
-                        <div id="identificacao">
-                            <div class="nome">
-                                <label for="idNomeOng">Nome da Ong</label>
-                                <input type="text" name="txtNomeOng" id="idNomeOng" placeholder="Insira o nome da Ong" required="required" minlength="5" class="grupo-input">
-                                <label for="CampoNmOng">*Campo Obrigatório</label>
-                            </div>
-
-                            <div class="sigla">
-                                <input type="text" name="txtNomeOng" placeholder="Insira a sigla da Ong"  minlength="5" class="grupo-input">
-                            </div>
-
-                        </div>
-
-                        <div class="data">
-                            <label for="idDataFundacao">Data de Fundação</label>
-                            <input type="date" name="dateDataFundacao" id="idEnderecoEm" required class="grupo-input">
-                            <label for="CampoDtFundacao">*Campo Obrigatório</label>
-                        </div>
-
-                        <div class="endereco">
-                            <label for="idEnderecoOng">Endereço</label>
-                            <input type="text" name="txtEnderecoOng" id="idEnderecoOng" placeholder="Insira o endereço da Ong" minlength="10" class="grupo-input">
-                        </div>
-
-                        <div class="Email">
-                            <label for="idEmailOng">Email de Contato</label>
-                            <input type="email" name="txtEmailOng" id="idEmailOng" placeholder="Insira o seu email de contato" required="required" class="grupo-input">
-                            <label for="CampoEmailOng">*Campo Obrigatório</label></div>
-
-                        <div class="website">
-                            <label for="idWebOng">Website</label>
-                            <input type="url" name="txtWebsiteOng" id="idWebOng" placeholder="Insira o Url do website da Ong" minlength="10" class="grupo-input">
-                        </div>
-
-                        <div class="telefone">
-                            <label for="idTelefoneOng">Telefone</label>
-                            <input type="tel" name="txtTelefoneOng" id="idTelefoneOng" placeholder="Insira Telefone da Ong"  minlength="11" class="grupo-input">
-                        </div>
-
-                        <div class="Senha">
-                            <label for="idSenhaOng">Senha</label>
-                            <input type="password" name="txtSenhaOng" id="idSenhaOng" placeholder="Insira sua Senha" required="required" minlength="5" class="grupo-input">
-                            <label for="CampoSenha">*Campo Obrigatório</label>
-                        </div>
-                        
-                        <div class="redes-socias">
-                            <label for="idRedesOng">Redes Sociais</label>
-
-                            <div class="redesSS">
-                                <div class="facebook">
-                                    <label for="idFace">Facebook</label>
-                                    <input type="text" name="txtFacebook" placeholder="Facebook" class="grupo-input">
-                                </div>
-    
-                                <div class="instagram">
-                                    <label for="idInsta">Instagram</label>
-                                    <input type="text" name="txtInstagram" placeholder="Instagram" class="grupo-input">
-                                </div>
-    
-                                <div class="Youtube">
-                                    <label for="idYou">Youtube</label>
-                                    <input type="text" name="txtYoutube" placeholder="Youtube" class="grupo-input">
-                                </div>
-    
-                                <div class="Twitter">
-                                    <label for="idX">Twitter</label>
-                                    <input type="text" name="txtX" placeholder="Twitter" class="grupo-input">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="descricao">
-                            <label for="idDescricaoMissao">Descreva a missão da ong</label>
-                            <input type="text" name="txtDescricaoMissa" id="idDescricaoMissao" placeholder="Escreva aqui a sobre a missão da ong..." class="grupo-input" required>
-                            <label for="DescricaoMissao">*Campo Obrigatório</label>
-                        </div>
-
-                        <div class="descricao">
-                            <label for="idDescricaoVisao">Descreva a visão da ong</label>
-                            <input type="text" name="txtDescricaoVisao" id="idDescricaoVisao" placeholder="Escreva aqui a sobre a visão da ong..." class="grupo-input" required>
-                            <label for="DescricaoVisao">*Campo Obrigatório</label>
-                        </div>
-                        <div class="descricao">
-                            <label for="idDescricaoArea">Descreva a área de atuação da ong</label>
-                            <input type="text" name="txtDescricaoArea" id="idDescricaoArea" placeholder="Escreva aqui a sobre a área de atuação da ong..." class="grupo-input" required>
-                            <label for="DescricaoArea">*Campo Obrigatório</label>
-                        </div>
-                        
-
-                    </div>
-                    <div class="btn-cadastrar">
-                        <button type="submit" class="grupo-input">Enviar</button>
-                    </div>
-                </fieldset>
-            </form>
-        </dialog>
-
-
-        <dialog id="situcao">
-            <!--id=sucesso h3Login Feito com Sucesso-->
-            <!--id=erro h3Dados Invalidos-->
-
-        </dialog>
-
-        <dialog id="CadastroRealizado">
-            <div class="div-btn-fechar">
-                <a href="#" class="botaozinho btn-fechar" id="btnFechar6">X</a></div>
-            <h3>Cadastro Realizado</h3>
-            <div>
-                <!--Aqui Vou colocar a seguinte tag <p>Seu Id da sua conta é : $$$$. Não se esqueçaz</p>-->
-                <p>Clique no "X" para fechar esse menu</p>
+            <div class="btn-cadastrar">
+              <button type="submit" class="grupo-input">Enviar</button>
             </div>
-        </dialog>
-        
+          </fieldset>
+        </form>
+      </dialog>
+
+      <dialog id="cadastroEmpresa">
+        <div class="div-btn-fechar">
+          <a href="#" class="botaozinho btn-fechar" id="btnFechar4">X</a>
+        </div>
+        <h3>Cadastrar</h3>
+        <form
+          action="#"
+          method="get"
+          id="empresa"
+          onsubmit="cadastroRealizado(this.id)"
+        >
+          <fieldset>
+            <div class="forms">
+              <div class="nome">
+                <label for="idNomeEmpresa">Nome da Empresa</label>
+                <input
+                  type="text"
+                  name="txtNomeEmpresa"
+                  id="idNomeEmpresa"
+                  placeholder="Insira o nome da empresa"
+                  required="required"
+                  minlength="5"
+                  class="grupo-input"
+                />
+                <label class="Co" for="CampoNmEmpresa"
+                  >*Campo Obrigatório</label
+                >
+              </div>
+
+              <div class="endereco">
+                <label for="idEnderecoEmpre">Endereço</label>
+                <input
+                  type="text"
+                  name="txtEnderecoEmpresa"
+                  id="idEnderecoEmpresa"
+                  placeholder="Insira o endereço da empresa"
+                  minlength="10"
+                  class="grupo-input"
+                />
+              </div>
+
+              <div class="Email">
+                <label for="idEmailEmpresa">Email de Contato</label>
+                <input
+                  type="email"
+                  name="txtEmailEmpresa"
+                  id="idEmailEmpresa"
+                  placeholder="Insira o email de contato da empresa"
+                  required="required"
+                  minlength="7"
+                  class="grupo-input"
+                />
+                <label class="Co" for="CampoEmailEmpresa"
+                  >*Campo Obrigatório</label
+                >
+              </div>
+
+              <div class="website">
+                <label for="idWebEmpresa">Website</label>
+                <input
+                  type="url"
+                  name="txtWebsiteEmpresa"
+                  id="idWebEmpresa"
+                  placeholder="Insira o Url do website da empresa"
+                  minlength="10"
+                  class="grupo-input"
+                />
+              </div>
+
+              <div class="telefone">
+                <label for="idTelefoneEmpresa">Telefone</label>
+                <input
+                  type="tel"
+                  name="txtTelefoneEmpresa"
+                  id="idTelefoneEmpresa"
+                  placeholder="Insira Telefone da Empresa"
+                  minlength="11"
+                  class="grupo-input"
+                />
+              </div>
+
+              <div class="redes-socias">
+                <label for="idRedes">Redes Sociais</label>
+
+                <div class="redesSS">
+                  <div class="facebook">
+                    <label for="idFace">Facebook</label>
+                    <input
+                      type="text"
+                      name="txtFacebook"
+                      placeholder="Facebook"
+                      class="grupo-input"
+                    />
+                  </div>
+
+                  <div class="instagram">
+                    <label for="idInsta">Instagram</label>
+                    <input
+                      type="text"
+                      name="txtInstagram"
+                      placeholder="Instagram"
+                      class="grupo-input"
+                    />
+                  </div>
+
+                  <div class="Youtube">
+                    <label for="idYou">Youtube</label>
+                    <input
+                      type="text"
+                      name="txtYoutube"
+                      placeholder="Youtube"
+                      class="grupo-input"
+                    />
+                  </div>
+
+                  <div class="Twitter">
+                    <label for="idX">Twitter</label>
+                    <input
+                      type="text"
+                      name="txtX"
+                      placeholder="Twitter"
+                      class="grupo-input"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="btn-cadastrar">
+              <button type="submit" class="grupo-input">Enviar</button>
+            </div>
+          </fieldset>
+        </form>
+      </dialog>
+
+      <dialog id="cadastroOng">
+        <div class="div-btn-fechar">
+          <a href="#" class="botaozinho btn-fechar" id="btnFechar5">X</a>
+        </div>
+        <h3>Cadastrar</h3>
+        <form
+          action="#"
+          method="get"
+          id="ong"
+          onsubmit="return cadastroRealizado(this.id)"
+        >
+          <fieldset>
+            <div class="forms">
+              <div id="identificacao">
+                <div class="nome">
+                  <label for="idNomeOng">Nome da Ong</label>
+                  <input
+                    type="text"
+                    name="txtNomeOng"
+                    id="idNomeOng"
+                    placeholder="Insira o nome da Ong"
+                    required="required"
+                    minlength="5"
+                    class="grupo-input"
+                  />
+                  <label for="CampoNmOng">*Campo Obrigatório</label>
+                </div>
+
+                <div class="sigla">
+                  <input
+                    type="text"
+                    name="txtNomeOng"
+                    placeholder="Insira a sigla da Ong"
+                    minlength="5"
+                    class="grupo-input"
+                  />
+                </div>
+              </div>
+
+              <div class="data">
+                <label for="idDataFundacao">Data de Fundação</label>
+                <input
+                  type="date"
+                  name="dateDataFundacao"
+                  id="idEnderecoEm"
+                  required
+                  class="grupo-input"
+                />
+                <label for="CampoDtFundacao">*Campo Obrigatório</label>
+              </div>
+
+              <div class="endereco">
+                <label for="idEnderecoOng">Endereço</label>
+                <input
+                  type="text"
+                  name="txtEnderecoOng"
+                  id="idEnderecoOng"
+                  placeholder="Insira o endereço da Ong"
+                  minlength="10"
+                  class="grupo-input"
+                />
+              </div>
+
+              <div class="Email">
+                <label for="idEmailOng">Email de Contato</label>
+                <input
+                  type="email"
+                  name="txtEmailOng"
+                  id="idEmailOng"
+                  placeholder="Insira o seu email de contato"
+                  required="required"
+                  class="grupo-input"
+                />
+                <label for="CampoEmailOng">*Campo Obrigatório</label>
+              </div>
+
+              <div class="website">
+                <label for="idWebOng">Website</label>
+                <input
+                  type="url"
+                  name="txtWebsiteOng"
+                  id="idWebOng"
+                  placeholder="Insira o Url do website da Ong"
+                  minlength="10"
+                  class="grupo-input"
+                />
+              </div>
+
+              <div class="telefone">
+                <label for="idTelefoneOng">Telefone</label>
+                <input
+                  type="tel"
+                  name="txtTelefoneOng"
+                  id="idTelefoneOng"
+                  placeholder="Insira Telefone da Ong"
+                  minlength="11"
+                  class="grupo-input"
+                />
+              </div>
+
+              <div class="Senha">
+                <label for="idSenhaOng">Senha</label>
+                <input
+                  type="password"
+                  name="txtSenhaOng"
+                  id="idSenhaOng"
+                  placeholder="Insira sua Senha"
+                  required="required"
+                  minlength="5"
+                  class="grupo-input"
+                />
+                <label for="CampoSenha">*Campo Obrigatório</label>
+              </div>
+
+              <div class="redes-socias">
+                <label for="idRedesOng">Redes Sociais</label>
+
+                <div class="redesSS">
+                  <div class="facebook">
+                    <label for="idFace">Facebook</label>
+                    <input
+                      type="text"
+                      name="txtFacebook"
+                      placeholder="Facebook"
+                      class="grupo-input"
+                    />
+                  </div>
+
+                  <div class="instagram">
+                    <label for="idInsta">Instagram</label>
+                    <input
+                      type="text"
+                      name="txtInstagram"
+                      placeholder="Instagram"
+                      class="grupo-input"
+                    />
+                  </div>
+
+                  <div class="Youtube">
+                    <label for="idYou">Youtube</label>
+                    <input
+                      type="text"
+                      name="txtYoutube"
+                      placeholder="Youtube"
+                      class="grupo-input"
+                    />
+                  </div>
+
+                  <div class="Twitter">
+                    <label for="idX">Twitter</label>
+                    <input
+                      type="text"
+                      name="txtX"
+                      placeholder="Twitter"
+                      class="grupo-input"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="descricao">
+                <label for="idDescricaoMissao">Descreva a missão da ong</label>
+                <input
+                  type="text"
+                  name="txtDescricaoMissa"
+                  id="idDescricaoMissao"
+                  placeholder="Escreva aqui a sobre a missão da ong..."
+                  class="grupo-input"
+                  required
+                />
+                <label for="DescricaoMissao">*Campo Obrigatório</label>
+              </div>
+
+              <div class="descricao">
+                <label for="idDescricaoVisao">Descreva a visão da ong</label>
+                <input
+                  type="text"
+                  name="txtDescricaoVisao"
+                  id="idDescricaoVisao"
+                  placeholder="Escreva aqui a sobre a visão da ong..."
+                  class="grupo-input"
+                  required
+                />
+                <label for="DescricaoVisao">*Campo Obrigatório</label>
+              </div>
+              <div class="descricao">
+                <label for="idDescricaoArea"
+                  >Descreva a área de atuação da ong</label
+                >
+                <input
+                  type="text"
+                  name="txtDescricaoArea"
+                  id="idDescricaoArea"
+                  placeholder="Escreva aqui a sobre a área de atuação da ong..."
+                  class="grupo-input"
+                  required
+                />
+                <label for="DescricaoArea">*Campo Obrigatório</label>
+              </div>
+            </div>
+            <div class="btn-cadastrar">
+              <button type="submit" class="grupo-input">Enviar</button>
+            </div>
+          </fieldset>
+        </form>
+      </dialog>
+
+      <dialog id="situcao">
+        <!--id=sucesso h3Login Feito com Sucesso-->
+        <!--id=erro h3Dados Invalidos-->
+      </dialog>
+
+      <dialog id="CadastroRealizado">
+        <div class="div-btn-fechar">
+          <a href="#" class="botaozinho btn-fechar" id="btnFechar6">X</a>
+        </div>
+        <h3>Cadastro Realizado</h3>
+        <div>
+          <!--Aqui Vou colocar a seguinte tag <p>Seu Id da sua conta é : $$$$. Não se esqueçaz</p>-->
+          <p>Clique no "X" para fechar esse menu</p>
+        </div>
+      </dialog>
     </main>
 
-   <footer>
-        <section class="esquerda">
-            <figure class="logo-roda">
-                <img src="../imgs/padroes/logo-sem-nome.png" alt="logo-sem-nome">
-                <figcaption>Eco Life Ventures</figcaption>
-            </figure>
+    <footer>
+      <section class="esquerda">
+        <figure class="logo-roda">
+          <img src="../imgs/padroes/logo-sem-nome.png" alt="logo-sem-nome" />
+          <figcaption>Eco Life Ventures</figcaption>
+        </figure>
 
-            <hr/>
-            <div class="redes">
-            <a href="https://github.com/2024-Global-Solution-1"><figure><img src="../imgs/padroes/github-logo.png" alt="github-logo"></figure></a>
-            <figure><img src="../imgs/padroes/instagram-logo.png" alt="insta-logo"></figure>
-            <figure><img src="../imgs/padroes/facebook-logo.png" alt="face-logo"></figure>
+        <hr />
+        <div class="redes">
+          <a href="https://github.com/2024-Global-Solution-1"
+            ><figure>
+              <img
+                src="../imgs/padroes/github-logo.png"
+                alt="github-logo"
+              /></figure
+          ></a>
+          <figure>
+            <img src="../imgs/padroes/instagram-logo.png" alt="insta-logo" />
+          </figure>
+          <figure>
+            <img src="../imgs/padroes/facebook-logo.png" alt="face-logo" />
+          </figure>
         </div>
-        </section>
-        <section class="direita">
-            <ul>
-                <li><a href="./sobre.html">Quem somos</a></li>
-                <li><a href="./denuncia.html">Denúncia</a></li>
-                <li><a href="./html/quiz.html">Venha Jogar</a></li>
-            </ul>
-        </section>
-        <hr class="linha"/>
-        <p>&copy; 2024 Eco Life Ventures</p>
-    </footer>  
-</body>
+      </section>
+      <section class="direita">
+        <ul>
+          <li><a href="./sobre.html">Quem somos</a></li>
+          <li><a href="./denuncia.html">Denúncia</a></li>
+          <li><a href="./quiz.html">Venha Jogar</a></li>
+        </ul>
+      </section>
+      <hr class="linha" />
+      <p>&copy; 2024 Eco Life Ventures</p>
+    </footer>
+  </body>
 </html>
