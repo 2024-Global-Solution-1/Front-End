@@ -12,8 +12,11 @@ header{
     background-image: url("../imgs/padroes/cabecalho.png");
     background-repeat: no-repeat;
 
+
     background-size: 100vw;
 
+    background-size: 100vw;
+    
     height: 26vh;
     display: grid;
     flex-wrap: wrap;
