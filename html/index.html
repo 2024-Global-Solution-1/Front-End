@@ -6,22 +6,66 @@
     <title>Quiz Game</title>
     <link rel="stylesheet" href="../css/styles.css" />
     <link rel="stylesheet" href="../css/estilo-padrao.css">
+    <script src="../js/script.js" defer></script>
   </head>
   <body>
-    <div class="quiz-container">
-      <h1 id="game-title">Quiz Game</h1>
-      <div id="question-container" class="question-container">
-        <div id="question">Question text will go here</div>
-        <div class="answer-buttons">
-          <button id="true-btn" class="btn">Verdadeiro</button>
-          <button id="false-btn" class="btn">Falso</button>
+    <header>
+      <figure><img src="../imgs/padroes/logo.png" alt="logo-principal"></figure>
+      <nav>
+          <ul>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="./pegada-carbono.html">Pegada de Carbono</a></li>
+              <li><a href="./sobre.html">Quem Somos</a></li>
+              <li><a href="./cadastro.html">Cadastrar</a></li>
+              <li><a href="./ongs.html">Ongs</a></li>
+          </ul>
+      </nav>
+      <label class="burger" for="burger">
+          <input type="checkbox" id="burger">
+          <span></span>
+          <span></span>
+          <span></span>
+      </label>
+    </header>
+    <main>
+      <div class="quiz-container">
+        <h1 id="game-title">Quiz Game</h1>
+        <div id="question-container" class="question-container">
+          <div id="question">Question text will go here</div>
+            <div class="answer-buttons">
+              <button id="true-btn" class="btn">Verdadeiro</button>
+              <button id="false-btn" class="btn">Falso</button>
+            </div>
+        </div>
+        <div id="result-container" class="result-container">
+          <h2 id="result">Pontuação: 0</h2>
+          <button id="play-again-btn" class="btn">Jogar Novamente</button>
         </div>
       </div>
-      <div id="result-container" class="result-container">
-        <h2 id="result">Pontuação: 0</h2>
-        <button id="play-again-btn" class="btn">Jogar Novamente</button>
-      </div>
-    </div>
-    <script src="../js/script.js"></script>
+    </main>
+    
+    <footer>
+      <section class="esquerda">
+          <figure class="logo-roda">
+            <img src="./imgs/padroes/logo-sem-nome.png" alt="logo-sem-nome">
+              <figcaption>Eco Life Ventures</figcaption>
+          </figure>
+        
+        <hr/>
+          <div class="redes">
+            <a href="https://github.com/2024-Global-Solution-1"><figure><img src="../imgs/padroes/github-logo.png" alt="github-logo"></figure></a>
+          <figure><img src="../imgs/padroes/instagram-logo.png" alt="insta-logo"></figure>
+          <figure><img src="../imgs/padroes/facebook-logo.png" alt="face-logo"></figure>
+          </div>
+      </section>
+      <section class="direita">
+          <ul>
+              <li><a href="./html/sobre.html">Quem somos</a></li>
+              <li><a href="./html/denuncia.html">Denúncia</a></li>
+          </ul>
+      </section>
+      <hr class="linha"/>
+      <p>&copy; 2024 Eco Life Ventures</p>
+    </footer>
   </body>
 </html>
