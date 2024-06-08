@@ -1,12 +1,3 @@
-/*<input type="range" id="rangeInput" min="0" max="100" oninput="updateValue(this.value)">
-<span id="rangeValue">50</span>
-
-<script>
-function updateValue(value) {
-  document.getElementById('rangeValue').textContent = value;
-}
-</script>*/
-
 
 function spanValor(valor, idMedida, number){
 
@@ -23,6 +14,7 @@ function spanValor(valor, idMedida, number){
 }
 
 /////////////////////
+
 
 /*Partes de acesso do Login */
 const btnLogin = document.querySelector("#logar");

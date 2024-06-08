@@ -1,200 +1,872 @@
+@import url('https://fonts.cdnfonts.com/css/irish-grover');
+@import url('https://fonts.cdnfonts.com/css/chewy');
+
+
+*{
+  margin: 0;
+  padding: 0;      
+  }
+  
 & body{
-    width: auto;
+  width: auto;
+  background: linear-gradient(0deg, rgba(10,3,26,0.95) 53%, rgba(0,0,62,0.95) 100%);
+
+  & header{
+    & a{
+      color: rgba(0, 178, 179, 1);
+    }
+  }
+
+  & main{
+    display: grid;
+    grid-template: 20vh 20vh 70vh / auto;
+    gap: 10vh;
+
+    & h1{
+      font-family: 'Irish Grover', sans-serif;
+      margin-top: 5vh;
+      text-align: center;
+      font-size: 64px;
+      color: #fff;
+    }
+
+    & p{
+      font-family: 'Irish Grover', sans-serif;
+      justify-self: center;
+      width: 30vw;
+      font-size: 32px;
+      text-align: center;
+      color: #fff;
+    }
+
+    & #primeira-pergunta{
+      display: grid;
+      grid-template: 10vh / auto;
+      width: 30vw;
+      height: 40vh;
+      background-color: rgba(0, 178, 179, 1);
+      border-radius: 55px;
+      justify-self: center;
+
+      & h3{
+        font-family: 'Irish Grover', sans-serif;
+        font-size: 30px;
+        align-self: center;
+        text-align: center;
+      }
+
+      & #botoes{
+        align-self: center;
+        justify-self: center;
+        display: flex;
+        width: 20vw;
+        height: auto;
+        padding: 30px;
+        background-color: rgba(0, 73, 103, 1);
+        border: 2px solid black;
+        border-radius: 55px;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        font-size: 30px;
+        font-family: 'Chewy', sans-serif;
+        
+
+        & #logar{
+          padding: 10px;
+          background-color: rgba(0, 178, 179, 1);
+          border: 2px solid black;
+          border-radius: 55px; 
+          
+          & a{
+            text-decoration: none;
+            color: #fff;
+          }
+        }
+
+        & #cadastrar{
+          padding: 10px;
+          border: 2px solid black;
+          border-radius: 55px;
+          background-color: rgba(0, 178, 179, 1);
+
+          & a{
+            text-decoration: none;
+            color: #fff;
+          }
+        }
+
+        & #sucesso{
+          background-color: rgba(6, 223, 14, 0.6);
+          font-size: 40px;
+          font-family: 'Irish Grover', sans-serif;
+          border: 1px solid black;
+          padding: 10px;
+        }
+
+        & #erro{
+          font-size: 40px;
+          font-family: 'Irish Grover', sans-serif;
+          padding: 10px;
+          background-color: rgba(223, 6, 6, 0.6);
+          border: 1px solid black;
+        }
+        
+      }
+    }
+
+    & label{
+      margin-left: 20px;
+      font-family: 'Irish Grover', sans-serif;
+      font-size: 20px;
+    }
+
+    & input{
+      border: 5px solid rgba(0, 73, 103, 1);
+      border-radius: 10px;
+    }
+
+    & button[type=submit]{
+      border: 1px solid white;
+      border-radius: 30px;
+      padding: 10px;
+      width: 10vw;
+      color: rgba(72, 200, 255, 1);
+      background-color: rgba(0, 73, 103, 1);
+      font-size: 20px;
+      font-family: 'Chewy', sans-serif;
+    }
+
+    & .Co{
+      font-size: 15px;
+    }
+
+    & .div-btn-fechar{
+      display: flex;
+      margin-right: 30px;
+      justify-content: end;
+      font-size: 40px;
+      font-family: 'Irish Grover', sans-serif;
+
+      & a{
+        color: #000;
+        text-decoration: none;
+      }
+    }
+
+    & .checkbox{
+      margin-left: 5vw;
+    }
+
+    &  #login{
+      align-self: center;
+      justify-self: center;
+      width: 50vw;
+      height: 90vh;
+      border-radius: 39px;
+      background-color: rgba(217, 217, 217, 0.6);
+
+      & h3{
+        font-family: 'Irish Grover', sans-serif;
+        font-size: 50px;
+        color: #fff;
+        text-align: center;
+      }
+
+      & fieldset{
+        display: grid;
+        grid-template: 60vh 10vh / auto;
+        border: none;
+
+        & .forms{
+          display: grid;
+          grid-template: 20vh 10vh 10vh 10vh / auto;
+          background-color: rgba(217, 217, 217, 0.6);
+          border-radius: 50px;
+          margin-left: 5vw;
+          width: 40vw;
+          gap: 20px;
+        }
+
+        & #btn-logar{
+          align-self: flex-end;
+          justify-self: center;
+        }
+
+        & .id{
+          display: grid;
+          grid-template: 3vh 5vh / auto;
+          align-self: flex-end;
+          width: 30vw;
+          margin-left: 5vw;
+
+        }
+
+        & .email{
+          display: grid;
+          grid-template: 3vh 5vh / auto;
+          align-self: center;
+          width: 30vw;
+          margin-left: 5vw;
+        }
+
+        & .senha{
+          display: grid;
+          grid-template: 3vh 5vh / auto;
+          align-self: center;
+          width: 30vw;
+          margin-left: 5vw;
+        }
+      }
+      
+    }
+
+    & #tipoCadastro{
+      align-self: center;
+      justify-self: center;
+      width: 60vw;
+      height: 55vh;
+      border-radius: 39px;
+      background-color: rgba(217, 217, 217, 0.7);
+
+      & h3{
+        font-family: 'Irish Grover', sans-serif;
+        font-size: 50px;
+        color: #fff;
+        text-align: center;
+      }
+      
+      & #opcoes{
+        display: grid;
+        grid-template: 10vh 20vh / auto;
+        background-color: rgba(217, 217, 217, 0.6);
+        border-radius: 50px;
+        margin-left: 8vw;
+        width: 45vw;
+        gap: 20px;
+
+        & #a3btn{
+          justify-self: center;
+          align-self: center;
+          display: grid;
+          grid-template: auto / 10vw 10vw 10vw;
+          gap: 40px;
+          
+          & a{
+            justify-self: center;
+            text-align: center;
+            text-decoration: none;
+            background-color: rgba(0, 73, 103, 1);
+            width: max-content;
+            color: rgba(72, 200, 255, 1);
+            font-size: 32px;
+            border: 3px solid black;
+            border-radius: 30px;
+            width: 9vw;
+            padding: 13px;
+            font-family: 'Chewy', sans-serif;
+            flex-wrap: wrap;
+          }
+        }
+
+        & p{
+          align-self: center;
+          width: max-content;
+          font-size: 24px;
+          font-family: 'Chewy', sans-serif;
+          color: #000;
+        }
+      }
+    }
+
+    & .btn-cadastrar{
+      align-self: center;
+      justify-self: center;
+    }
+
+    & #cadastroUser{
+      align-self: center;
+      justify-self: center;
+      width: 60vw;
+      height: 100vh;
+      border-radius: 39px;
+      background-color: rgba(217, 217, 217, 0.7);
+
+      & h3{
+        font-family: 'Irish Grover', sans-serif;
+        font-size: 50px;
+        color: #fff;
+        text-align: center;
+      }
+
+      & fieldset{
+        display: grid;
+        grid-template: 130vh 25vh / auto;
+        border: none;
+
+      }
+
+      & .forms{
+        display: grid;
+        grid-template: 10vh 10vh 10vh 10vh 10vh 10vh 10vh 30vh/ auto;
+        background-color: rgba(217, 217, 217, 0.6);
+        border-radius: 50px;
+        margin-left: 8vw;
+        width: 40vw;
+        padding: 30px;
+        gap: 30px;
+
+      }
+    }
+
+    & #cadastroEmpresa{
+      align-self: center;
+      justify-self: center;
+      width: 60vw;
+      height: 100vh;
+      border-radius: 39px;
+      background-color: rgba(217, 217, 217, 0.7);
+
+      & h3{
+        font-family: 'Irish Grover', sans-serif;
+        font-size: 50px;
+        color: #fff;
+        text-align: center;
+      }
+
+      & fieldset{
+        display: grid;
+        grid-template: 120vh 30vh / auto;
+        border: none;
+    
+        & .forms{
+          display: grid;
+          grid-template: 10vh 10vh 10vh 10vh 10vh 0vh 60vh/ auto;
+          background-color: rgba(217, 217, 217, 0.6);
+          border-radius: 50px;
+          margin-left: 8vw;
+          width: 40vw;
+          padding: 30px;
+          gap: 30px;
+  
+        }
+      }
+    }
+
+    & #cadastroOng{
+      align-self: center;
+      justify-self: center;
+      width: 60vw;
+      height: 100vh;
+      border-radius: 39px;
+      background-color: rgba(217, 217, 217, 0.7);
+
+      & h3{
+        font-family: 'Irish Grover', sans-serif;
+        font-size: 50px;
+        color: #fff;
+        text-align: center;
+      }
+
+      & fieldset{
+        display: grid;
+        grid-template: 200vh 10vh / auto;
+        border: none;
+    
+        & .forms{
+          display: grid;
+          grid-template: 10vh 10vh 10vh 10vh 10vh 10vh 10vh 20vh 20vh 20vh 20vh/ auto;
+          background-color: rgba(217, 217, 217, 0.6);
+          border-radius: 50px;
+          margin-left: 5vw;
+          width: 40vw;
+          padding: 30px;
+          gap: 30px;
+
+          & #identificacao{
+            display: grid;
+            gap: 5vw;
+            grid-template: auto / 20vw 15vw;
+            
+          }
+  
+        }
+      }
+    }
+
+    & .nome{
+      display: grid;
+      grid-template: 30px 40px 20px / auto;
+      margin-left: 3vw;
+    }
+
+    & .user-name{
+      display: grid;
+      grid-template: 30px 40px / auto;
+      margin-left: 3vw;
+    }
+
+    & .idade{
+      display: grid;
+      grid-template: 30px 40px / auto;
+      margin-left: 3vw;
+    }
+
+    & .endereco{
+      display: grid;
+      grid-template: 30px 40px / auto;
+      margin-left: 3vw;
+    }
+
+    & .Email{
+      display: grid;
+      grid-template: 30px 40px 20px / auto;
+      margin-left: 3vw;
+    }
+
+    & .Senha{
+      display: grid;
+      grid-template: 30px 40px 20px / auto;
+      margin-left: 3vw;
+    }
+
+    & .telefone{
+      display: grid;
+      grid-template: 30px 40px / auto;
+      margin-left: 3vw;
+    }
+
+    & .redes-socias{
+      display: grid;
+      grid-template: 50px 100px / auto;
+      margin-left: 3vw;
+
+      & .redesSS{
+        display: grid;
+        grid-template: 6vw 6vw / 15vw 15vw;
+        column-gap: 50px;
+
+        & input{
+          height: 4vh;
+        }
+      }
+    }
+
+    & .website{
+      display: grid;
+      grid-template: 30px 40px / auto;
+      margin-left: 3vw;
+    }
+
+    & .data{
+      display: grid;
+      grid-template: 30px 40px 20px / auto;
+      margin-left: 3vw;
+    }
+
+    & .sigla{
+      display: grid;
+      width: 5vw;
+      height: 4vh;
+      align-self: center;
+    }
+
+    & .descricao{
+      display: grid;
+      grid-template: 30px 100px 20px / auto;
+      margin-left: 3vw;
+    }
+
+    & #CadastroRealizado{
+      align-self: center;
+      justify-self: center;
+      width: 60vw;
+      height: 55vh;
+      border-radius: 39px;
+      background-color: rgba(217, 217, 217, 0.7);
+
+      & .div-btn-fechar{
+        background-color: rgba(217, 217, 217, 0.6);
+        border-radius: 50px;
+
+        & h3{
+          font-family: 'Irish Grover', sans-serif;
+          font-size: 2.5vw;
+          color: #fff;
+          text-align: center;
+        }
+  
+        & p{
+          text-align: center;
+          font-family: 'Chewy', sans-serif;
+          font-size: 2vw;
+        }
+      }
+    }
+  }
 }
-.wrapper {
-    --input-focus: #2d8cf0;
-    --font-color: #323232;
-    --font-color-sub: #666;
-    --bg-color: #fff;
-    --bg-color-alt: #666;
-    --main-color: #323232;
-    display: flex;
-    flex-direction: column; 
-    align-items: center; 
-  }
-  /* switch card */
-  .switch {
-    transform: translateY(-200px);
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    width: 50px;
-    height: 20px;
-  }
+
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+/* ------------------------------------------------------------------------------------------------------------- */
+
+@media screen and (max-width:480px) {
+  & body{
   
-  .card-side::before {
-    position: absolute;
-    content: 'Log in';
-    left: -70px;
-    top: 0;
-    width: 100px;
-    text-decoration: underline;
-    color: var(--font-color);
-    font-weight: 600;
+    & main{
+      grid-template: 20vh 20vh 70vh / auto;
+  
+      & h1{
+        align-self: self-end;
+        font-size: 45px;
+      }
+  
+      & p{
+        width: 50vw;
+        font-size: 22px;
+      }
+  
+      & #primeira-pergunta{
+        width: 70vw;
+        height: 40vh;
+  
+        & #botoes{
+          width: 30vw;
+          height: 15vh;
+          padding: 30px;
+          font-size: 20px;
+        }
+      }
+
+      & label{
+        margin-left: 10px;
+        font-family: 'Irish Grover', sans-serif;
+        font-size: 20px;
+      }
+  
+      & input{
+        width: 30vw;
+        border: 5px solid rgba(0, 73, 103, 1);
+        border-radius: 10px;
+      }
+  
+      & button[type=submit]{
+        border: 1px solid white;
+        border-radius: 30px;
+        padding: 10px;
+        width: 20vw;
+        color: rgba(72, 200, 255, 1);
+        background-color: rgba(0, 73, 103, 1);
+        font-size: 20px;
+        font-family: 'Chewy', sans-serif;
+      }
+  
+      & .Co{
+        font-size: 15px;
+      }
+
+      & #tipoCadastro{
+        align-self: center;
+        justify-self: center;
+        width: 60vw;
+        height: 55vh;
+        border-radius: 39px;
+        background-color: rgba(217, 217, 217, 0.7);
+        flex-direction: column;
+  
+        & h3{
+          font-family: 'Irish Grover', sans-serif;
+          font-size: 40px;
+          color: #fff;
+          text-align: center;
+        }
+        
+        & #opcoes{
+  
+          & #a3btn{
+            display: flex;
+            justify-self: center;
+            align-self: center;
+            display: grid;
+            grid-template: auto / 10vw 10vw 10vw;
+            gap: 40px;
+            flex-wrap: wrap;
+  
+            & a{
+              display: flex;
+              justify-self: center;
+              text-align: center;
+              text-decoration: none;
+              margin-right: 60vw;
+              font-size: 15px;
+              width: 9vw;
+              padding: 10px;
+              font-family: 'Chewy', sans-serif;
+              flex-wrap: wrap;
+            }
+          }
+  
+          & p{
+            align-self: center;
+            width: max-content;
+            font-size: 24px;
+            font-family: 'Chewy', sans-serif;
+            color: #000;
+          }
+        }
+      }
+      & .redes-socias{
+        display: grid;
+        grid-template: 50px;
+        flex-direction: column;
+  
+        & .redesSS{
+          display: flex;
+          column-gap: 50px;
+          flex-direction: column;
+  
+          & input{
+            height: 4vh;
+          }
+        }
+      }
+      & #cadastroUser{
+        & fieldset{
+          display: grid;
+          grid-template: 160vh 25vh / auto;
+          border: none;
+        }
+
+        & .forms{
+          grid-template: 10vh 10vh 10vh 10vh 10vh 10vh 10vh 40vh/ auto;
+        }
+      }
+
+      & #cadastroOng{
+  
+        & h3{
+          font-family: 'Irish Grover', sans-serif;
+          font-size: 50px;
+          color: #fff;
+          text-align: center;
+        }
+  
+        & fieldset{
+          grid-template: 285vh 10vh / auto;
+      
+          & .forms{
+            grid-template: 20vh 15vh 15vh 15vh 15vh 15vh 15vh 45vh 25vh 25vh 25vh/ auto;
+
+            & #identificacao{
+              display: grid;
+              grid-template: 10vh 15vh / auto;
+            }
+    
+          }
+        }
+      }
+
+      & .redes-socias{
+        display: grid;
+        grid-template: 50px;
+        flex-direction: column;
+  
+        & .redesSS{
+          display: flex;
+          column-gap: 50px;
+          flex-direction: column;
+  
+          & input{
+            height: 4vh;
+          }
+        }
+      }
+
+      & .descricao{
+        grid-template: 45px 100px 60px / auto;
+      }
+
+    }
   }
+}
+
+/* ---------------------------------------------------------------------------------------------------------------- */
+
+@media screen and (max-width:768px) and (min-width:481px){
+  & body{
   
-  .card-side::after {
-    position: absolute;
-    content: 'Sign up';
-    left: 70px;
-    top: 0;
-    width: 100px;
-    text-decoration: none;
-    color: var(--font-color);
-    font-weight: 600;
+    & main{
+      grid-template: 20vh 20vh 70vh / auto;
+  
+      & p{
+        width: 50vw;
+      }
+  
+      & #primeira-pergunta{
+        width: 70vw;
+        height: 40vh;
+  
+        & #botoes{
+          width: 30vw;
+          height: 5vh;
+          padding: 30px;
+          font-size: 20px;
+        }
+      }
+
+      & #tipoCadastro{
+        
+        & #opcoes{
+          margin-left: 0;
+          width: 55vw;
+          gap: 20px;
+        }
+      }
+
+      & #cadastroUser{
+  
+        & fieldset{
+          display: grid;
+          grid-template: 160vh 25vh / auto;
+          border: none;
+        }
+      }
+
+      & #cadastroOng{
+  
+        & h3{
+          font-family: 'Irish Grover', sans-serif;
+          font-size: 50px;
+          color: #fff;
+          text-align: center;
+        }
+  
+        & fieldset{
+          grid-template: 285vh 10vh / auto;
+      
+          & .forms{
+            grid-template: 20vh 15vh 15vh 15vh 15vh 15vh 15vh 55vh 25vh 25vh 25vh/ auto;
+
+            & #identificacao{
+              display: grid;
+              grid-template: 10vh 15vh / auto;
+            }
+    
+          }
+        }
+      }
+
+      & .redes-socias{
+  
+        & .redesSS{
+          display: flex;
+          column-gap: 60px;
+          flex-direction: column;
+  
+          & input{
+            display: flex;
+            height: 5vh;
+          }
+        }
+      }
+
+      & #cadastroEmpresa{
+  
+        & fieldset{
+          grid-template: 125vh 20vh / auto;
+        }
+      }
+    }
   }
+}
+
+/* ---------------------------------------------------------------------------------------------------------------- */
+
+@media screen and (max-width:1024px) and (min-width:769px){
+  & body{
   
-  .toggle {
-    opacity: 0;
-    width: 0;
-    height: 0;
+    & main{
+      grid-template: 20vh 20vh 70vh / auto;
+  
+      & p{
+        width: 50vw;
+      }
+  
+      & #primeira-pergunta{
+        width: 60vw;
+        height: 40vh;
+  
+        & #botoes{
+          width: 30vw;
+          height: 10vh;
+          padding: 30px;
+          font-size: 20px;
+        }
+      }
+
+      & #cadastroUser{
+  
+        & fieldset{
+          display: grid;
+          grid-template: 160vh 25vh / auto;
+          border: none;
+        }
+      }
+
+      & #cadastroOng{
+  
+        & h3{
+          font-family: 'Irish Grover', sans-serif;
+          font-size: 50px;
+          color: #fff;
+          text-align: center;
+        }
+  
+        & fieldset{
+          grid-template: 285vh 10vh / auto;
+      
+          & .forms{
+            grid-template: 25vh 15vh 15vh 15vh 15vh 15vh 15vh 55vh 25vh 25vh 25vh/ auto;
+
+            & #identificacao{
+              display: grid;
+              grid-template: 10vh 10vh / auto;
+            }
+
+            & .sigla{
+              margin-left: 3vw;
+              display: grid;
+              width: 35vw;
+              height: 4vh;
+              align-self: center;
+            }
+    
+          }
+        }
+      }
+
+      & .redes-socias{
+  
+        & .redesSS{
+          display: flex;
+          column-gap: 60px;
+          flex-direction: column;
+  
+          & input{
+            display: flex;
+            height: 5vh;
+          }
+        }
+      }
+
+      & #cadastroEmpresa{
+  
+        & fieldset{
+          grid-template: 125vh 20vh / auto;
+        }
+      }
+
+    }
   }
-  
-  .slider {
-    box-sizing: border-box;
-    border-radius: 5px;
-    border: 2px solid var(--main-color);
-    box-shadow: 4px 4px var(--main-color);
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: var(--bg-colorcolor);
-    transition: 0.3s;
-  }
-  
-  .slider:before {
-    box-sizing: border-box;
-    position: absolute;
-    content: "";
-    height: 20px;
-    width: 20px;
-    border: 2px solid var(--main-color);
-    border-radius: 5px;
-    left: -2px;
-    bottom: 2px;
-    background-color: var(--bg-color);
-    box-shadow: 0 3px 0 var(--main-color);
-    transition: 0.3s;
-  }
-  
-  .toggle:checked + .slider {
-    background-color: var(--input-focus);
-  }
-  
-  .toggle:checked + .slider:before {
-    transform: translateX(30px);
-  }
-  
-  .toggle:checked ~ .card-side:before {
-    text-decoration: none;
-  }
-  
-  .toggle:checked ~ .card-side:after {
-    text-decoration: underline;
-  }
-  
-  /* card */ 
-  
-  .flip-card__inner {
-    width: 300px;
-    height: 350px;
-    position: relative;
-    background-color: transparent;
-    perspective: 1000px;
-      /* width: 100%;
-      height: 100%; */
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-  }
-  
-  .toggle:checked ~ .flip-card__inner {
-    transform: rotateY(180deg);
-  }
-  
-  .toggle:checked ~ .flip-card__front {
-    box-shadow: none;
-  }
-  
-  .flip-card__front, .flip-card__back {
-    padding: 20px;
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    background: lightgrey;
-    gap: 20px;
-    border-radius: 5px;
-    border: 2px solid var(--main-color);
-    box-shadow: 4px 4px var(--main-color);
-  }
-  
-  .flip-card__back {
-    width: 100%;
-    transform: rotateY(180deg);
-  }
-  
-  .flip-card__form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-  }
-  
-  .title {
-    margin: 20px 0 20px 0;
-    font-size: 25px;
-    font-weight: 900;
-    text-align: center;
-    color: var(--main-color);
-  }
-  
-  .flip-card__input {
-    width: 250px;
-    height: 40px;
-    border-radius: 5px;
-    border: 2px solid var(--main-color);
-    background-color: var(--bg-color);
-    box-shadow: 4px 4px var(--main-color);
-    font-size: 15px;
-    font-weight: 600;
-    color: var(--font-color);
-    padding: 5px 10px;
-    outline: none;
-  }
-  
-  .flip-card__input::placeholder {
-    color: var(--font-color-sub);
-    opacity: 0.8;
-  }
-  
-  .flip-card__input:focus {
-    border: 2px solid var(--input-focus);
-  }
-  
-  .flip-card__btn:active, .button-confirm:active {
-    box-shadow: 0px 0px var(--main-color);
-    transform: translate(3px, 3px);
-  }
-  
-  .flip-card__btn {
-    margin: 20px 0 20px 0;
-    width: 120px;
-    height: 40px;
-    border-radius: 5px;
-    border: 2px solid var(--main-color);
-    background-color: var(--bg-color);
-    box-shadow: 4px 4px var(--main-color);
-    font-size: 17px;
-    font-weight: 600;
-    color: var(--font-color);
-    cursor: pointer;
-  } 
+}
