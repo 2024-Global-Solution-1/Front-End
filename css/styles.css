@@ -1,0 +1,92 @@
+@import url('https://fonts.cdnfonts.com/css/kavoon');
+@import url('https://fonts.cdnfonts.com/css/irish-grover');  
+@import url('https://fonts.cdnfonts.com/css/chewy');
+
+*{
+  margin: 0;
+  padding: 0;      
+}
+
+
+body {
+    background: linear-gradient(0deg, rgba(0,96,140,1) 0%, rgba(9,149,168,1) 100%);
+
+    & header{
+        & a{
+            color: #004967;
+        }
+    }
+
+    & main{
+        display: grid;
+        justify-content: center;
+        height: 45vh;
+        align-items: center;
+        padding: 20px;
+    }
+}
+
+.quiz-container {
+    background-color: rgba(217, 217, 217, 0.6);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 30vw;
+}
+
+h1 {
+    margin-bottom: 2vw;
+}
+
+.question-container {
+    margin-bottom: 20px;
+}
+
+#question {
+    margin-bottom: 20px;
+    font-size: 2vw;
+}
+
+.answer-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.btn {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 2vw;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#false-btn {
+    background-color: rgb(168, 34, 56);
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.result-container {
+    display: none;
+}
+
+#result {
+    margin-bottom: 20px;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------- */
+
+@media screen and (max-width:480px) {
+    #question {
+        margin-bottom: 20px;
+        font-size: 3vw;
+    }
+}
