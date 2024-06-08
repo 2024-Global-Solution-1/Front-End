@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Denuncia</title>
+    <link rel="icon" href="../imgs/padroes/logo.png"/>
+    <link rel="stylesheet" href="../css/estilo-padrao.css">
+    <link rel="stylesheet" href="../css/denuncia.css">
+</head>
+<body>
+    <header>
+        <figure><img src="../imgs/padroes/logo.png" alt="logo-principal"></figure>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./informacoes.html">Info</a></li>
+                <li><a href="./cadastro.html">Cadastrar</a></li>
+                <li><a href="./sobre.html">Quem Somos</a></li>
+                <li><a href="./ongs.html">Ongs</a></li>
+                <li><a href="./pegada-carbono.html">Pegada Carbono</a></li>
+            </ul>
+        </nav>
+        <label class="burger" for="burger">
+            <input type="checkbox" id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+            </label>
+    </header>
+
+    <main>
+        <h3>Caso tenha visto alguma coisa suspeita, denuncie aqui de forma anonima, enviaremos a sua denuncia para profissionais responsaveis</h3>
+        <form action="#" method="get">
+            <fieldset>
+                <div class="denuncia">
+                    <div class="denuncia2">
+                        <label for="idDenuncia">Denuncie</label>
+                        <input type="text" name="txtDenuncia" id="idDenuncia" placeholder="Descreva a denúncia" required="required" class="grupo-input">
+                    </div>
+                   
+                    <div class="img">
+                        <label for="idImagem">Adicione aqui imagens caso tenha</label>
+                        <input type="file" name="arqDenunciaImg" id="idImagem" accept="image/png, image/jpeg">
+                    </div>
+                    
+                    <div class="video">
+                        <label for="idVideos">Adicione aqui videos caso tenha</label>
+                        <input type="file" name="arqDenunciaVid" id="idVideos" accept="video/*">
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+
+        <dialog id="denuncia-realizada">
+            <div class="div-btn-fechar">
+                <a href="#" class="botaozinho btn-fechar" id="btnFechar8">X</a></div>
+            <h3>Sua Denuncia anônima foi registrada com sucesso</h3>
+        </dialog>
+    </main>
+
+    <footer>
+        <section class="esquerda">
+            <figure class="logo-roda">
+                <img src="../imgs/padroes/logo-sem-nome.png" alt="logo-sem-nome">
+                <figcaption>Eco Life Ventures</figcaption>
+            </figure>
+
+            <hr/>
+            <div class="redes">
+            <a href="https://github.com/2024-Global-Solution-1"><figure><img src="../imgs/padroes/github-logo.png" alt="github-logo"></figure></a>
+            <figure><img src="../imgs/padroes/instagram-logo.png" alt="insta-logo"></figure>
+            <figure><img src="../imgs/padroes/facebook-logo.png" alt="face-logo"></figure>
+            </div>
+        </section>
+        <section class="direita">
+            <ul>
+                <li><a href="./sobre.html">Quem somos</a></li>
+                <li><a href="./denuncia.html">Denúncia</a></li>
+                <li><a href="./html/quiz.html">Venha Jogar</a></li>
+            </ul>
+        </section>
+        <hr class="linha"/>
+        <p>&copy; 2024 Eco Life Ventures</p>
+    </footer>
+</body>
+</html>
