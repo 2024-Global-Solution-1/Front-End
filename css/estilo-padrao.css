@@ -13,10 +13,11 @@ header{
     background-repeat: no-repeat;
 
 
+
     background-size: 100vw;
 
     background-size: 100vw;
-    
+
     height: 26vh;
     display: grid;
     flex-wrap: wrap;
@@ -192,6 +193,7 @@ footer{
         padding: 0;
         width: 100vw;
         font-size: 13px;
+
         grid-template: auto auto auto / 20vw 3fr 1fr;
 
         & .logo-roda{
